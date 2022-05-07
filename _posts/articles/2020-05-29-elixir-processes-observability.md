@@ -334,6 +334,7 @@ To use `:sys.statistics`, you must first start it. After that, you can `:get`
 the current measurements. Here's an example of how you might use it with the
 `Logger` process:
 
+{% raw %}
 ```elixir
 iex 1> require Logger
 Logger
@@ -372,6 +373,7 @@ iex 6> :sys.statistics Logger, false
 iex 7> :sys.statistics Logger, :get
 {:ok, :no_statistics}
 ```
+{% endraw %}
 
 In this exchange, we begin by first `require`ing `Logger` and then begin
 capturing statistics with `:sys.statistics Logger, true`. On line 3, we output

@@ -180,6 +180,7 @@ true
 Like in Elixir, module names are atoms, which is why we can use Erlang modules
 and functions in Elixir by prepending their names with a `:`.
 
+{% raw %}
 ```elixir
 iex 1 > :io.format("Hello, World!~n")
 Hello, World!
@@ -187,6 +188,7 @@ Hello, World!
 iex 2 > :calendar.universal_time
 {{2019, 7, 11}, {18, 25, 50}}
 ```
+{% endraw %}
 
 ### Punctuation
 
@@ -739,21 +741,21 @@ Once you've found the documentation you're looking for, the next obstacle is
 getting something useful out of it. Generally speaking, all Erlang documentation
 follows the same basic pattern:
 
-**module\_name**  
-**Module**  
-- module name (yes, it's redundant) 
+**module\_name**
+**Module**
+- module name (yes, it's redundant)
 
-**Module Summary**  
+**Module Summary**
 - One sentence summary of the module
 
-**Description**  
+**Description**
 - Comprehensive description of a module and its uses
 
-**Exports**  
-- function definition  
-- function definition  
-- ...  
-- function definition  
+**Exports**
+- function definition
+- function definition
+- ...
+- function definition
 
 There is some amount of ceremony in Erlang documentation. For example, listing
 the module name twice and providing a summary along with the full description

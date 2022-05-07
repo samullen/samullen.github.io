@@ -433,6 +433,7 @@ to group the measurements. For example, if we defined the buckets as `[200, 500,
 page views based on how long it took to build them: less than 200 ms, less than
 500 ms, less than 1,000 ms, and then everything over that.
 
+{% raw %}
 ```elixir
 def handle_metric(%Distribution{} = metric, measurements, _metadata) do
   duration = extract_measurement(metric, measurements)
@@ -441,6 +442,7 @@ def handle_metric(%Distribution{} = metric, measurements, _metadata) do
 
   Logger.info "Distribution - #{inspect :ets.match_object(:metrix, {{:distribution, :_}, :_})}"
 end
+{% endraw %}
 
 defp update_distribution([], _duration) do
   key = {:distribution, "1000+"}
