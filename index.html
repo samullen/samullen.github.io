@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<!-- header image -->
+<section id="greeting">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-md-offset-7">
+        <div class="writings well">
+          <h2 class="text-center">Recent Articles</h2>
+
+          {% for page in site.posts limit:5 %}
+            <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+            <p><span class="glyphicon glyphicon-time"></span> Posted {{ page.date | date: "%B %e, %Y" }}</p>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services">
+  <div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h2>About me</h2>
+      <p>I live in Kansas City with my beautiful wife, our two great kids, and
+      our dog and cat. When I'm not working, you can probably find me at the
+      soccer field, working out, reading, or enjoying the many restaurants
+      Kansas City has to offer</p>
+    </div>
+
+    <div class="col-md-4">
+      <h2>What I do</h2>
+      <p>I'm a freelance software developer specializing in Ruby, JavaScript,
+      and Elixir. I work remotely to help companies around the world implement
+      new products and services, bring new life into existing products, and
+      consult them on how to take their business to the next level.</p>
+    </div>
+
+    <div class="col-md-4">
+      <h2>Get in touch</h2>
+      <p>Zig Ziglar said, "You will get all you want in life if you help enough
+      other people get what they want." I believe that, and try to live by it
+      as best as I can. If you need help with a project, understanding a concept, or anything else, <a href="/contact">Reach out. I'm happy to help.</a></p>
+    </div>
+  </div>
+  </div>
+</section>

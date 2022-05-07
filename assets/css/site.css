@@ -1,0 +1,170 @@
+/*!
+ * Start Bootstrap - Blog Home HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+html,
+body {
+  font-size: 18px;
+  height: 100%;
+  background-color: #fff;
+  color: #353547;
+}
+
+html, body, p, table {
+  /* font-family: "Helvetica", "Calibri Light", Roboto, sans-serif; */
+  /* font-family: "Raleway", Helvetica, sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.02em;
+  font-size: 18px;
+}
+
+footer {
+  margin: 50px 0;
+}
+
+h2 {
+  margin: 40px 0px 20px 0px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+table {
+  margin: 30px 0px 30px 0px;
+}
+
+ul {
+  margin-bottom: 20px;
+}
+
+ul {
+  margin-bottom: 20px;
+}
+
+.img-right {
+  float: right!important;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.img-left {
+  float: left!important;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.navbar-brand {
+  padding: 10px 20px;
+  font-size: 24px;
+}
+
+.navbar a, a:focus, a:hover {
+  color: #353547;
+}
+
+.navbar-nav > li > a {
+  font-size: 18px;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom: 3px solid #dddddd;
+}
+
+.icon-box {
+  margin-right: auto;
+  margin-left: auto;
+  width: 112px;
+  height: 112px;
+  background-color: #6BA62D;
+  color: #fff;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+.icon-box span {
+  line-height: 112px;
+  vertical-align: middle;
+  font-size: 48px;
+}
+
+section#greeting {
+  background-image: url(/assets/images/selfie.jpg);
+  background-size: cover;
+  padding: 150px 0px;
+}
+
+section#greeting .writings {
+  background: rgba(0,0,0,0.65);
+  border: 0;
+}
+
+section#greeting .writings h2 {
+  color: #fff;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #aaa;
+}
+
+section#greeting .writings h3 a {
+  color: #ccc;
+}
+
+section#greeting .writings p {
+  color: #999;
+  margin-bottom: 20px;
+}
+
+section#services {
+  padding: 100px 0px;
+  color: #333333;
+}
+section#services h2 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+section#services h3 {
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 90px;
+}
+
+section#contact {
+  background-image: url(/assets/images/map-image.png);
+  background-color: #222;
+  height: 700px;
+  padding: 150px 0px;
+}
+
+section#contact h2 {
+  font-size: 48px;
+  color: #fff;
+  font-weight: bold;
+}
+
+section#contact h3 {
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+section#contact .form-group input, section#contact .form-group textarea {
+  line-height: 20px;
+  height: 52px;
+}
+
+section#contact .form-group textarea {
+  height: 186px;
+}
+
+section#contact .form-group input[type="submit"] {
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
+}

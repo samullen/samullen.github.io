@@ -1,0 +1,30 @@
+<!-- Blog Sidebar Widgets Column -->
+<div class="col-md-4">
+
+  <div class="well">
+    <h4>Recent posts</h4>
+    <hr>
+    <ul class="list-unstyled">
+      {{ range first 10 .Site.Pages }}
+        {{ if .Section }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </div>
+
+  <div class="well">
+    <h4>Popular posts</h4>
+    <hr>
+    <ul class="list-unstyled">
+      <li><a href="/2014/07/protips-for-freelancers/">ProTips for Freelancers</a><li>
+      <li><a href="/2014/06/evaluating-rails-projects/">Evaluating Rails Projects</a><li>
+      <li><a href="/2014/01/the-costs-of-keeping-your-rails-app-up-to-date-dot-dot-dot-or-not/">The Costs of Keeping Your Rails App Up to Date...Or Not</a><li>
+      <li><a href="/2013/07/so-you-want-to-be-a-freelancer-dot-dot-dot/">So You Want to Be a Freelancer...</a><li>
+      <li><a href="/2013/05/the-problem-with-rails-callbacks/">The Problem With Rails Callbacks</a><li>
+      <li><a href="/2012/08/the-introverts-networking-survival-guide/">The Introvert's Networking Survival Guide: Large Events</a><li>
+      <li><a href="/2012/02/advice-on-attracting-good-developers/">Advice on Attracting Good Developers</a><li>
+    </ul>
+  </div>
+
+</div>
