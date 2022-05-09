@@ -1,11 +1,10 @@
-+++
-author = "Samuel Mullen"
-date = "2016-09-29T06:39:51-05:00"
-description = "An introduction to ActionCable with a focus on how things work rather than how to make them work."
-tags = ["rails", "ruby", "actioncable"]
-title = "An Introduction to ActionCable in Rails 5"
-
-+++
+---
+author: "Samuel Mullen"
+date: "2016-09-29T06:39:51-05:00"
+description: "An introduction to ActionCable with a focus on how things work rather than how to make them work."
+tags: ["rails", "ruby", "actioncable"]
+title: "An Introduction to ActionCable in Rails 5"
+---
 
 Ruby on Rails 5.0+ has been out for a few months now and has brought with it a
 number of much needed improvements (AdequateRecord, Rails API), and a few which
@@ -44,7 +43,7 @@ sites, and from there it's not difficult to see the opportunity of viewing any
 kind of personal update (i.e. likes, images, and reposts). Finally, as we
 disconnect ourselves from the idea of person-to-person interaction and toward
 website components being the recipients of live data, new ideas abound: stock
-tickers, live poll results, notifications, log feeds, and more. 
+tickers, live poll results, notifications, log feeds, and more.
 
 ActionCable Lifecycle
 ----------------------------
@@ -62,7 +61,7 @@ play during a page's life cycle, and when.
 6. Data is received on those channels for specific subscribers (see #4) and an action is triggered.
 7. Finally, the connection is closed when the consumer is refreshed, changes location, or the tab or window is closed.
 
-Nate Berkopec summarizes this process:  
+Nate Berkopec summarizes this process:
 
 > Action Cable provides the following:
 > <ul>
@@ -119,13 +118,13 @@ session variable in the `#show` method.
 
 The views for `#index` and `#show` are equally straightforward:
 
-``` 
+```
 <%# index.html.erb %>
 
 <ul>
   <% @polls.each do |poll| %>
     <li><%= link_to poll.name, poll %>
-    
+
     <% if user_signed_in? %>
       [<%= link_to "results", poll_results_path(poll) %>]
     <% end %>
@@ -204,7 +203,7 @@ At this point people are able to view the list of available polls and vote in th
 
 ### Results
 
-Like the logic for `PollsController`, the logic for the `ResultsController` is very simple and only requires an `index` action. 
+Like the logic for `PollsController`, the logic for the `ResultsController` is very simple and only requires an `index` action.
 
 ```
 # /app/controllers/results_controller.rb
@@ -378,13 +377,13 @@ App.cable.subscriptions.create(
       console.log(data);
 
       myChart.data.datasets[0].data = [
-        _.find(data, function(vote) { 
+        _.find(data, function(vote) {
           return vote.value == "yes";
         }).vote_count,
-        _.find(data, function(vote) { 
+        _.find(data, function(vote) {
           return vote.value == "no";
         }).vote_count,
-        _.find(data, function(vote) { 
+        _.find(data, function(vote) {
           return vote.value == "maybe";
         }).vote_count
       ];
@@ -409,11 +408,11 @@ The last thing to note is the `received` method. Here we're taking the `data` re
 
 Finally, we need the server to publish to our subscriber. We do that with `/app/channels/polling_channel.rb`
 
-From the Rails Guide: 
+From the Rails Guide:
 
 > If you have a stream that is related to a model, then the broadcasting used can be generated from the model and channel.
 
-This is exactly what we're doing here: 
+This is exactly what we're doing here:
 
 ```
 class PollingChannel < ApplicationCable::Channel
@@ -453,7 +452,7 @@ end
 
 When a vote is cast, the server broadcasts the new results for the poll to the channel for that poll, which all subscribers then use to update the results view.
 
-In our example, it “feels” like there’s a lot going on, but the majority of the work will be with the files in `/app/assets/javascripts/cable/subscription`, `/app/channels`, and wherever you need to trigger a broadcast. 
+In our example, it “feels” like there’s a lot going on, but the majority of the work will be with the files in `/app/assets/javascripts/cable/subscription`, `/app/channels`, and wherever you need to trigger a broadcast.
 
 Rake and the Rails Console
 -----------------------------------
@@ -478,7 +477,7 @@ production:
 Should You Use ActionCable?
 -----------------------------
 
-You know what I'm going to say here, right? 
+You know what I'm going to say here, right?
 
 It depends.
 
@@ -495,7 +494,7 @@ Is there a feature in your app which can actively benefit from being a live feed
 
 The Rails community has been very vocal about the added complexity which comes with each new version of Rails, and 5.0 is no different. Consider the example we used in this article. There is new terminology, new classes and resources, and javascript files which have to stay in line with those new classes and resources.
 
-Not only are there new files, naming, and resources, there's also a new server. Running ActionCable in production requires the addition of the [Redis data structure server](http://redis.io/). 
+Not only are there new files, naming, and resources, there's also a new server. Running ActionCable in production requires the addition of the [Redis data structure server](http://redis.io/).
 
 #### Not every website can afford the added strain
 
@@ -510,7 +509,7 @@ Is real-time really necessary? Sometimes it is, but sometimes an occasional upda
 So What?
 -------------
 
-ActionCable is likely the most exciting feature to come out of Rails 5.0, and in this article we’ve looked at how it fits in to the existing Rails directory structure, but more importantly we’ve discovered the responsibilities of each of the new components and how they fit into the new architecture. 
+ActionCable is likely the most exciting feature to come out of Rails 5.0, and in this article we’ve looked at how it fits in to the existing Rails directory structure, but more importantly we’ve discovered the responsibilities of each of the new components and how they fit into the new architecture.
 
 In the same way that there is more to WebSockets than merely chat rooms, there's more to ActionCable than what we've touched on in this article. As more and more developers take advantage of this new feature, expect to see new and creative features get added to both familiar and as of yet undiscovered websites.
 

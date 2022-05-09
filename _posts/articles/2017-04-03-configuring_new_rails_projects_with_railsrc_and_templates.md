@@ -1,10 +1,10 @@
-+++
-title = "Configuring New Rails Projects With .railsrc and Templates"
-author = "Samuel Mullen"
-description = "Templates and .railsrc files have been around since Rails 3.x, but somehow I'm just finding this out now. Learn from my ignorance and simplify setting up all your future rails projects."
-date = "2017-04-03T06:57:37-05:00"
-tags = [ "howto", "rails" ]
-+++
+---
+title: "Configuring New Rails Projects With .railsrc and Templates"
+author: "Samuel Mullen"
+description: "Templates and .railsrc files have been around since Rails 3.x, but somehow I'm just finding this out now. Learn from my ignorance and simplify setting up all your future rails projects."
+date: "2017-04-03T06:57:37-05:00"
+tags: [ "howto", "rails" ]
+---
 
 If you've used Unix/Linux for any length of time, you're famililar with dotfiles. They're those files begining with a `.` and usually ending with `rc`: `.bashrc`, `.vimrc`, and `.psqlrc` being familiar examples. Modifying these files allows you to configure the behavior of the assocated program, and can be a neverending quest for some to get the "perfect" setup.
 
@@ -74,8 +74,8 @@ guardfile = <<-EOL
     watch(%r{^lib/(.+)\.rb$})         { |m| "test/lib/\#{m[1]}_test.rb" }
     watch(%r{^test/test_helper\.rb$}) { 'test' }
 
-    watch(%r{^app/(models|mailers|helpers)/(.+)\.rb$}) { |m| 
-      "test/\#{m[1]}/\#{m[2]}_test.rb" 
+    watch(%r{^app/(models|mailers|helpers)/(.+)\.rb$}) { |m|
+      "test/\#{m[1]}/\#{m[2]}_test.rb"
     }
     watch(%r{^app/controllers/api/(.+)_controller\.rb$}) { |m| "test/requests/\#{m[1]}_test.rb" }
   end

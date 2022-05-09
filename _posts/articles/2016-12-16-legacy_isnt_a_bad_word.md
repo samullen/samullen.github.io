@@ -1,10 +1,10 @@
-+++
-title = "\"Legacy\" isn't a Bad Word"
-description = "There's a lot to hate about legacy code, but is it possible it's more good than bad? Find out what it is, why it's so hated, and how you can benefit from it."
-author = "Samuel Mullen"
-tags = [ "legacy", "programming" ]
-date = "2016-12-16T20:03:26-06:00"
-+++
+---
+title: "\"Legacy\" isn't a Bad Word"
+description: "There's a lot to hate about legacy code, but is it possible it's more good than bad? Find out what it is, why it's so hated, and how you can benefit from it."
+author: "Samuel Mullen"
+tags: [ "legacy", "programming" ]
+date: "2016-12-16T20:03:26-06:00"
+---
 
 Legacy Code. If you're a programmer, you'll eventually have to deal with it. While a few who delight in immersing themselves in an unknown codebase, most approach legacy code in the same way we approach doctor visits: we put it off until the pain becomes unbearable.
 
@@ -26,7 +26,7 @@ There are two primary definitions for legacy code: a literal definition and a mo
 
 The literal definition describes legacy code as code which is no longer supported,  either because the language itself or the technology it runs on are obsolete.
 
-> Legacy code is source code that relates to a no-longer supported or manufactured operating system or other computer technology. The term was first used by Computer Scientist George Olivetti to describe code maintained by an administrator that did not develop the code.  
+> Legacy code is source code that relates to a no-longer supported or manufactured operating system or other computer technology. The term was first used by Computer Scientist George Olivetti to describe code maintained by an administrator that did not develop the code.
 > [Wikipedia - Legacy Code](https://en.wikipedia.org/wiki/Legacy_code)
 
 While this is an accurate definition, it's not the on that immediately comes to mind. Michael Feathers provides a more practical definition:
@@ -66,7 +66,7 @@ As complexity grows and complications arise, we as programmers are forced to mak
 
 <img src="//samuelmullen.com/images/legacy_isnt_a_bad_word/cavein.jpg" class="img-thumbnail img-responsive img-right" alt="cave in" title="See? Cuz' the ceiling was 'brittle'">
 
-If the project had a comprehensive suite of tests, breaking changes would show up immediately. Without such coverage, however, errors from these changes may go unnoticed until they are discovered in production, with potentially disastrous effects. In many ways, determining how changes to the code base affect the entire system is like trying to determine if you are injured or sick without a sense of pain or discomfort. Automated tests act as a sort of nervous system for software.  
+If the project had a comprehensive suite of tests, breaking changes would show up immediately. Without such coverage, however, errors from these changes may go unnoticed until they are discovered in production, with potentially disastrous effects. In many ways, determining how changes to the code base affect the entire system is like trying to determine if you are injured or sick without a sense of pain or discomfort. Automated tests act as a sort of nervous system for software.
 
 It Slows Development
 --------------------------
@@ -75,7 +75,7 @@ As you can imagine, working with overly complex code which is tightly coupled ac
 
 <img src="//samuelmullen.com/images/legacy_isnt_a_bad_word/tied_up.png" class="img-thumbnail img-responsive img-right" alt="indiana jones and dad tied up" title="Legacy code ties you up">
 
-But the time it takes to make changes in the here and now is only a piece of the whole picture. It doesn't consider how those changes affect future development. Each new layer of complexity added now, only adds to the difficulty of making changes later. 
+But the time it takes to make changes in the here and now is only a piece of the whole picture. It doesn't consider how those changes affect future development. Each new layer of complexity added now, only adds to the difficulty of making changes later.
 
 <div class="clearfix"></div>
 
@@ -89,7 +89,7 @@ The final result is a demoralized development team. When you're faced with the d
 > One broken window—a badly designed piece of code, a poor management decision that the team must live with for the duration of the project—is all it takes to start the decline. If you find yourself working on a project with quite a few broken windows, it’s all too easy to slip into the mindset of “All the rest of this code is crap, I’ll just follow suit.” It doesn’t matter if the project has been fine up to this point.
 > — Andy Hunt and David Thomas, *The Pragmatic Programmer*
 
-It's this final result that drags us down: that the changes and improvements we make don't matter. 
+It's this final result that drags us down: that the changes and improvements we make don't matter.
 
 The Truth About Legacy Code
 =======================
@@ -108,7 +108,7 @@ The Opportunity to Add Value
 
 The first opportunity presented by legacy code is one immediately understood by management: improving legacy code adds value. Management doesn't always take developers at their word, but they're more likely to listen when it's combined with a  cost-benefit analysis. Show them how improving the existing code base can reduce hardware expenditures or mitigate the need for a new hire and you'll find them in your corner.
 
-* **Improved Efficiency:** Improvements to speed are always a good thing. Faster page loads, data processing, batch processing, and other types of processing all lead to being able to do more with less. The key is to quantify the costs of the existing system (i.e., time/processing unit) against those of the proposed solution. 
+* **Improved Efficiency:** Improvements to speed are always a good thing. Faster page loads, data processing, batch processing, and other types of processing all lead to being able to do more with less. The key is to quantify the costs of the existing system (i.e., time/processing unit) against those of the proposed solution.
 * **Reduced Development Costs:** The greatest expense in any IT department is
 its staff. Reducing the complexity of the code base allows for greater
 productivity from the development and operational staff – code complexity and
@@ -134,7 +134,7 @@ The Opportunity to Learn
 At first glance, legacy code may appear to offer you nothing of value, but when
 you dig deeper you will find that's simply not the case. Reading code, even bad
 code, is one of the best ways to make huge strides in your progress as a
-developer. 
+developer.
 
 > ...we're fortunate to be in a profession where the knowledge and skill of all the masters is right there for us to absorb, embedded in the code they have written. All you have to do is read it...
 > -- Alan Skorkin, *[Why I Love Reading Other People’s Code And You Should Too](http://www.skorks.com/2010/05/why-i-love-reading-other-peoples-code-and-you-should-too/)*
@@ -170,7 +170,7 @@ solution. It was a long and painful lesson, but I eventually learned from it and
 am better for it.
 
 If, like those with the growth mindset, you believe you can develop yourself, then you’re open to accurate information about your current abilities, even if it’s unflattering.
-― Carol S. Dweck, Mindset: The New Psychology of Success 
+― Carol S. Dweck, Mindset: The New Psychology of Success
 
 The Opportunity to Do What We Love
 ----------------------------------------

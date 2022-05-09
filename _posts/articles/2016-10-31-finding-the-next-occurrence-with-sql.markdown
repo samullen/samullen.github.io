@@ -1,10 +1,10 @@
-+++
-title = "Finding the \"Next Occurrence\" with SQL"
-author = "Samuel Mullen"
-description = "Given a start date, an interval, and a frequency, how can you easily determine if a date is the next occurrence?"
-date = "2016-10-31T17:46:49-05:00"
-tags = [ "sql", "dates", "databases", "postgres"]
-+++
+---
+title: "Finding the \"Next Occurrence\" with SQL"
+author: "Samuel Mullen"
+description: "Given a start date, an interval, and a frequency, how can you easily determine if a date is the next occurrence?"
+date: "2016-10-31T17:46:49-05:00"
+tags: [ "sql", "dates", "databases", "postgres"]
+---
 
 ## The Problem
 
@@ -70,12 +70,12 @@ SELECT *
 ```
 
 Similar to the "weekly query" above, we're limiting our results to only those
-with an interval of "month". 
+with an interval of "month".
 
 To see if our target date lands  _n_ months from our start date, we can use
 Postegres' `interval` feature. In our calculation, we...
 
-* determine the difference in days between the start date and the target date. 
+* determine the difference in days between the start date and the target date.
 
 ```
 ('2016-10-31'::date - begin_on::date)::int
@@ -112,14 +112,14 @@ database function or calculation within the “where clause” of a SQL statemen
 the database can no longer retrieve data merely by following indexed fields or
 other algorithms, but instead performs the calculations on the data while
 retrieving it to determine if it meets the constraints (in our case, comparing
-it to a date). 
+it to a date).
 
 How is this any different than performing these calculations outside the
-database? 
+database?
 
 1. Keeping the calculations inside the database reduces the transfer time of the
-   data; 
+   data;
 2. Databases are really good at searching and comparing against calculated
-   results. 
+   results.
 
 I had a lot of fun figuring this solution out. If it helps you, [drop us a line](/contact) and let us know.

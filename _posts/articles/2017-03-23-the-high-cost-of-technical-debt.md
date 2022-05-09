@@ -1,10 +1,10 @@
-+++
-title = "The High Cost of Technical Debt"
-description = "Technical debt is costing your projects and company more than you realize. Like fiscal debt, technical debt can be paid down, and it's imperative that you do.  There's more at stake than a little bit of low quality code."
-date = "2017-03-23T13:12:32-05:00"
-author = "Samuel Mullen"
-tags = ["legacy code","technical debt"]
-+++
+---
+title: "The High Cost of Technical Debt"
+description: "Technical debt is costing your projects and company more than you realize. Like fiscal debt, technical debt can be paid down, and it's imperative that you do.  There's more at stake than a little bit of low quality code."
+date: "2017-03-23T13:12:32-05:00"
+author: "Samuel Mullen"
+tags: ["legacy code","technical debt"]
+---
 
 Being in debt is a horrible feeling, and the deeper the debt you're in, the worse that feeling gets. It's suffocating and many, refusing to acknowledge they're gasping for air, allow themselves to become more and more constricted.
 
@@ -18,7 +18,7 @@ When you are no longer burdened by debt, you are free to do what you want with y
 
 Legacy technologies are a lot like debt. In fact it's so much like debt we call it exactly that: "technical debt." Ward Cunningham was the first to draw the comparison [when he wrote](http://c2.com/doc/oopsla92.html):
 
-> The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise.  
+> The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise.
 
 Just like monetary debt, technical debt incurs interest which must be paid. This interest reveals itself in increases to different types of costs: maintenance, support, legal, opportunity, and talent. The longer it takes you to pay down your debt, the more interest you'll accrue in the process.
 
@@ -28,7 +28,7 @@ In 2002, the National Institute of Standards and Technology (NIST) estimated tha
 
 While 80% sounds like a lot–and it is–understand that it results from the complexity of the code. The greater the complexity, the higher that percentage will be. Complexity takes into account both the size of the project and the quality of the code. Large projects with high-quality code can have much smaller maintenance costs than smaller projects with low-quality code.
 
-> Software is error-ridden in part because of its growing complexity. The size of software products is no longer measured in thousands of lines of code, but in millions. Software developers already spend approximately 80% of development costs on identifying and correcting defects and yet few products of any type other than software are shipped with such high levels of errors.  
+> Software is error-ridden in part because of its growing complexity. The size of software products is no longer measured in thousands of lines of code, but in millions. Software developers already spend approximately 80% of development costs on identifying and correcting defects and yet few products of any type other than software are shipped with such high levels of errors.
 > – [Software Errors Cost U.S. Economy $59.5 Billion Annually](http://abeacha.com/NIST_press_release_bugs_cost.htm)
 
 ### Support Costs
@@ -37,7 +37,7 @@ Software bugs are a little bit like real bugs: Sometimes you know the bugs are t
 
 <img src="//samuelmullen.com/images/high_cost_of_technical_debt/call_center.jpg" class="img-thumbnail img-responsive img-right" alt="call center" title="call center">
 
-Your support costs will increase by several factors: 
+Your support costs will increase by several factors:
 
 * **Customer base**: the number of customers who use your product
 * **Code quality**: how error-free the product is
@@ -63,12 +63,12 @@ In software, you have a certain amount of resources (e.g. staff, money, and proc
 
 But technical debt changes all that. When a project has a large amount of technical debt, every choice will be framed by that debt. Regardless of the decision, the debt must either be paid down or somehow put off. The time it takes to do that only adds to the opportunity cost. If you choose to continue to put off paying down you debt, you will see more and more opportunities slip by.
 
-> If you can get today’s work done today, but you do it in such a way that you can’t possibly get tomorrow’s work done tomorrow, then you lose.  
+> If you can get today’s work done today, but you do it in such a way that you can’t possibly get tomorrow’s work done tomorrow, then you lose.
 > – Martin Fowler, [Refactoring: Improving the Design of Existing Code](https://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672)
 
 ### Talent Costs
 
-In the late 1990s, every media outlet was transfixed by the [Y2K bug](https://en.wikipedia.org/wiki/Year_2000_problem). Stories published in that time either spoke about the impending doom of the crisis or the exorbitant amount of money consultants were charging to fix the problem. Of course, not every consultant was able to charge enormous amounts of money, just those who specialized in legacy technologies such as COBOL. 
+In the late 1990s, every media outlet was transfixed by the [Y2K bug](https://en.wikipedia.org/wiki/Year_2000_problem). Stories published in that time either spoke about the impending doom of the crisis or the exorbitant amount of money consultants were charging to fix the problem. Of course, not every consultant was able to charge enormous amounts of money, just those who specialized in legacy technologies such as COBOL.
 
 <img src="//samuelmullen.com/images/high_cost_of_technical_debt/rubymidwest.jpg" class="img-thumbnail img-responsive img-center" alt="call center" title="call center">
 
@@ -78,7 +78,7 @@ Universities don't teach COBOL anymore–they rarely even teach C or C++–and g
 
 ## Start Investing
 
-Prior to getting married, my wife (then fiancé) and I racked up around $10,000 in credit card debt in order to pay for our wedding and move to Kansas City. Even though we did it intentionally, it put us in a bad spot and took over a year to pay off the debt. Over this period, time we began looking forward to each month's credit card statement, because each payment brought us closer to freedom. We not only saw each payment as buying back freedoms, but also as an investment. The more we paid each month, the less we would have to pay in total. 
+Prior to getting married, my wife (then fiancé) and I racked up around $10,000 in credit card debt in order to pay for our wedding and move to Kansas City. Even though we did it intentionally, it put us in a bad spot and took over a year to pay off the debt. Over this period, time we began looking forward to each month's credit card statement, because each payment brought us closer to freedom. We not only saw each payment as buying back freedoms, but also as an investment. The more we paid each month, the less we would have to pay in total.
 
 <img src="//samuelmullen.com/images/high_cost_of_technical_debt/investing.jpg" class="img-thumbnail img-responsive img-right" alt="plant growing in coins" title="plant growing in coins">
 
@@ -90,11 +90,11 @@ To start paying off your technical debt, you need to start investing in two plac
 
 The [average American credit card debt is $16,748](https://www.nerdwallet.com/blog/average-credit-card-debt-household/), and most people do not intentionally put themselves in that position. They get there a little bit at a time, not through one clearly bad decision, but through many smaller bad *and* good decisions.
 
-Software projects are the same way. Technical debt doesn't accrue because of one bad decision or even through an intentional decision to make a system worse. It happens a little bit at a time through short-sighted decisions, external pressures, inexperience, apathy, and a host of other reasons. 
+Software projects are the same way. Technical debt doesn't accrue because of one bad decision or even through an intentional decision to make a system worse. It happens a little bit at a time through short-sighted decisions, external pressures, inexperience, apathy, and a host of other reasons.
 
 The problem is once technical debt is there and it's perceived to be allowed, it seeps into the culture. It's like a broken window in a neighborhood.
 
-> One broken window—a badly designed piece of code, a poor management decision that the team must live with for the duration of the project—is all it takes to start the decline. If you find yourself working on a project with quite a few broken windows, it’s all too easy to slip into the mindset of “All the rest of this code is crap, I’ll just follow suit.” It doesn’t matter if the project has been fine up to this point.  
+> One broken window—a badly designed piece of code, a poor management decision that the team must live with for the duration of the project—is all it takes to start the decline. If you find yourself working on a project with quite a few broken windows, it’s all too easy to slip into the mindset of “All the rest of this code is crap, I’ll just follow suit.” It doesn’t matter if the project has been fine up to this point.
 > — Andy Hunt and David Thomas, “The Pragmatic Programmer”
 
 The line must be drawn: No longer will we allow low-quality software to be shipped. No longer will we accept garbage code into our project.
@@ -103,7 +103,7 @@ It may take pushing back on management (read: It *will* take pushing back on man
 
 ### Investing in Your Code Base
 
-But changing your team's culture and attitude is only half the battle, it must be matched by action. The actions we recommend are implementing automated testing, a practice of regular refactoring, and performing code reviews. While there are more practices teams can use to invest in their code base, we've found that these three are the most effective for stopping the bleeding and moving a project in the right direction. 
+But changing your team's culture and attitude is only half the battle, it must be matched by action. The actions we recommend are implementing automated testing, a practice of regular refactoring, and performing code reviews. While there are more practices teams can use to invest in their code base, we've found that these three are the most effective for stopping the bleeding and moving a project in the right direction.
 
 #### Automated Testing
 
@@ -123,7 +123,7 @@ How much money would your project save if you were able to reduce support and ma
 
 According to Martin Fowler in "[Refactoring: Improving the Design of Existing Code](https://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672)", Refactoring is the process of making a change "...to the internal structure of software to make it easier to understand and cheaper to modify without changing its observable behavior."
 
-While the changes made may have no perceivable external benefits, the benefits you gain internally are immeasurable. Martin Fowler wrote, "I’ve found that refactoring helps me write fast software. It slows the software in the short term while I’m refactoring, but it makes the software easier to tune during optimization. I end up well ahead." 
+While the changes made may have no perceivable external benefits, the benefits you gain internally are immeasurable. Martin Fowler wrote, "I’ve found that refactoring helps me write fast software. It slows the software in the short term while I’m refactoring, but it makes the software easier to tune during optimization. I end up well ahead."
 
 Furthermore, in [An Empirical Study of Refactoring Challenges and Benefits at Microsoft](https://www.microsoft.com/en-us/research/publication/an-empirical-study-of-refactoring-challenges-and-benefits-at-microsoft/), developers reported similar findings to those of Martin Fowler with the following results:
 
@@ -147,7 +147,7 @@ Wouldn't you want to see these same benefits in your own projects? Doesn't it ap
 I wrote more thoroughly about code reviews in my my article, "[Your App Has Cancer"](https://blog.codinghorror.com/code-reviews-just-do-it/), but if I may quote the quote which was quoted there...
 
 > … software testing alone has limited effectiveness – the average defect detection rate is only 25 percent for unit testing, 35 percent for function testing, and 45 percent for integration testing. In contrast, the average effectiveness of design and code inspections are 55 and 60 percent. Case studies of review results have been impressive:
-> 
+>
 > * In a software-maintenance organization, 55 percent of one-line maintenance changes were in error before code reviews were introduced. After reviews were introduced, only 2 percent of the changes were in error. When all changes were considered, 95 percent were correct the first time after reviews were introduced. Before reviews were introduced, under 20 percent were correct the first time.
 > * In a group of 11 programs developed by the same group of people, the first 5 were developed without reviews. The remaining 6 were developed with reviews. After all the programs were released to production, the first 5 had an average of 4.5 errors per 100 lines of code. The 6 that had been inspected had an average of only 0.82 errors per 100. Reviews cut the errors by over 80 percent.
 > * The Aetna Insurance Company found 82 percent of the errors in a program by using inspections and was able to decrease its development resources by 20 percent.

@@ -1,10 +1,10 @@
-+++
-title = "Embracing Change: Rails 5.1 Adopts Yarn, Webpack, and the JS Ecosystem"
-date = "2017-03-16T14:55:56-05:00"
-description = "Many naysayers would have you believe Rails is dead. Don't believe the hype. With the coming of Rails 5.1 and its embrace of the JS ecosytem, Rails is solidifying its position as the king of web frameworks."
-author = "Samuel Mullen"
-tags = ["rails","webpack","javascript","yarn"]
-+++
+---
+title: "Embracing Change: Rails 5.1 Adopts Yarn, Webpack, and the JS Ecosystem"
+date: "2017-03-16T14:55:56-05:00"
+description: "Many naysayers would have you believe Rails is dead. Don't believe the hype. With the coming of Rails 5.1 and its embrace of the JS ecosytem, Rails is solidifying its position as the king of web frameworks."
+author: "Samuel Mullen"
+tags: ["rails","webpack","javascript","yarn"]
+---
 
 For many years, [Ruby on Rails](http://rubyonrails.org/) has been the go-to framework for startups, micropreneurs, SMBs, and really for anyone who needed to build and launch a tool quickly. With its opinionated, [convention over configuration](https://en.wikipedia.org/wiki/Convention_over_configuration) approach, and [Heroku's](http://heroku.com) brilliant `git push` to deploy feature, Ruby on Rails made every other solution look barbaric by comparison.
 
@@ -70,13 +70,13 @@ Under your project's `/bin` directory, you'll find the following new executables
 * **webpack**: The primary script used to compile your "packs" into the final output. It works with the current environment and accepts the same arguments you would normally pass to `webpack` directly.
 * **webpack-dev-server**: This allows you to run your own server from which to load assets. "This setup allows you to leverage advanced webpack features, such as [Hot Module Replacement](https://webpack.github.io/docs/hot-module-replacement-with-webpack.html)." As the name implies, this will only be used in development.
 * **webpack-watcher**: This script watches for changes in the `app/javascript/` directory and compiles them as changes are made.
-* **yarn**: A basic wrapper around the yarn executable. 
+* **yarn**: A basic wrapper around the yarn executable.
 
 ### Configuration Files
 
 Configuration files for webpack can be found in the `config/webpack/` directory (I'm showing my age calling it "directory"): `development.js`, `production.js`, and `shared.js`.
 
-Most projects won't need anything done to either the `development.js` or `production.js` files, and will instead only need to modify the `shared.js` file which both of the other files include. 
+Most projects won't need anything done to either the `development.js` or `production.js` files, and will instead only need to modify the `shared.js` file which both of the other files include.
 
 The `development.js` config includes some flags which are useful during development.
 
@@ -121,7 +121,7 @@ Yarn uses a file similar to Bundler's `Gemfile` called `package.json`. It's loca
 
 Notice that it's broken up into two sections: "dependencies" and "devDepenencies". Yarn follows a similar pattern in its `package.json` file as Bundler does with its `Gemfile`, and groups packages based on whether it is for development ("devDependences") or runtime ("dependencies").
 
-If you want to add a new package, add it to the appropriate section and run `bin/yarn` from the command line. 
+If you want to add a new package, add it to the appropriate section and run `bin/yarn` from the command line.
 
 Alternatively, you can use Yarn to add the module to the `package.json` file and pull down the libraries all at once with the following commands:
 
@@ -140,7 +140,7 @@ To get started with webpack, you need to understand four basic concepts.
 
 Every webpack config file has an `entry` section. This can be set to either a filename or an array of filenames for webpack to use as a starting off point for knowing what to bundle. Webpack treats these files similarly to how the Asset Pipeline treats JavaScript in `app/assets/javascripts`. As it sees a dependency, it includes it in its tree.
 
-> webpack creates a graph of all of your application's dependencies. The starting point of this graph is known as an entry point. The entry point tells webpack where to start and follows the graph of dependencies to know what to bundle. You can think of your application's entry point as the contextual root or the first file to kick off your app. 
+> webpack creates a graph of all of your application's dependencies. The starting point of this graph is known as an entry point. The entry point tells webpack where to start and follows the graph of dependencies to know what to bundle. You can think of your application's entry point as the contextual root or the first file to kick off your app.
 
 The Rails entry configuration looks like this:
 
@@ -165,7 +165,7 @@ Note: Make sure to put your entry point files in the "packs" directory, and all 
 
 Once your bundle has been created, webpack needs to know where to store it. The "output" configuration tells webpack where to do that.
 
-In the `shared.js` file, the "output" value is defined thusly: 
+In the `shared.js` file, the "output" value is defined thusly:
 
 ```
 // config/webpack/shared.js
@@ -228,7 +228,7 @@ In this block, we see a number of settings:
 
 Loaders are what webpack uses to transform files prior to being bundled. Plugins, on the other hand, are what webpack uses to transform files after being bundled.
 
-In the `production.js` file provided by Rails, it uses the `UglifyJsPlugin` and `CompressionPlugin` to first minify and then zip the final output file. 
+In the `production.js` file provided by Rails, it uses the `UglifyJsPlugin` and `CompressionPlugin` to first minify and then zip the final output file.
 
 ```
 // config/webpack/production.js
@@ -270,7 +270,7 @@ What happened to the Asset Pipeline? Long story short: nothing. You can still us
 
 ### Babel by Default
 
-The webpack configuration files generated by webpacker follow the ES6/2015 JavaScript syntax. As discussed in the [Loaders](#loaders) section above, this syntax gets transpiled into ES5 which is what most browsers safely understand. The transpilation is handled by the [Babel JavaScript Compiler](https://babeljs.io/). 
+The webpack configuration files generated by webpacker follow the ES6/2015 JavaScript syntax. As discussed in the [Loaders](#loaders) section above, this syntax gets transpiled into ES5 which is what most browsers safely understand. The transpilation is handled by the [Babel JavaScript Compiler](https://babeljs.io/).
 
 ES6 is quickly becoming the standard used by web developers. If you're familiar with ES5 JavaScript syntax and [CoffeeScript](http://coffeescript.org), learning the ES6 syntax will be trivial.
 
@@ -285,7 +285,7 @@ yarn add jquery
 ```
 
 2. **Use the jQuery "src":** webpack prefers the original, unmodified source code of a library, rather than the packaged "dist" code. Add this section at the same level as the "entry" and "output" sections in the `shared.js` file.
- 
+
 ```
 // config/webpack/shared.js
 

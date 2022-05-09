@@ -1,10 +1,10 @@
-+++
-title = "Your App Has Cancer"
-description = "Cancer in software has many of the same characteristics as those in the human body: it steals resources from the body, grows at an alarming rate, and spreads. Know what symptoms to look for in your software, what damage in can lead to in your project and busienss, and learn how to fight it."
-author = "Samuel Mullen"
-date = "2016-12-04T12:25:16-06:00"
-tags = [ "business", "software", "development", "management" ]
-+++
+---
+title: "Your App Has Cancer"
+description: "Cancer in software has many of the same characteristics as those in the human body: it steals resources from the body, grows at an alarming rate, and spreads. Know what symptoms to look for in your software, what damage in can lead to in your project and busienss, and learn how to fight it."
+author: "Samuel Mullen"
+date: "2016-12-04T12:25:16-06:00"
+tags: [ "business", "software", "development", "management" ]
+---
 
 <img src="//samuelmullen.com/images/cancer/cancer_cell_comparison.png" class="img-thumbnail img-responsive img-right" alt="Comparison of health and cancer cells" title="Comparison of healthy and cancer cells">
 
@@ -28,7 +28,7 @@ symptoms that you will ever know how sick your software is.
 
 ### Code Smells
 
-Coined by Kent Beck while helping Martin Fowler write "[Refactoring](http://martinfowler.com/books/refactoring.html)," the term “code smell” refers to certain identifiable patterns in code which are “…a surface indication that usually corresponds to a deeper problem in the system” ([CodeSmell](http://martinfowler.com/bliki/CodeSmell.html)). 
+Coined by Kent Beck while helping Martin Fowler write "[Refactoring](http://martinfowler.com/books/refactoring.html)," the term “code smell” refers to certain identifiable patterns in code which are “…a surface indication that usually corresponds to a deeper problem in the system” ([CodeSmell](http://martinfowler.com/bliki/CodeSmell.html)).
 
 Patterns such as duplicated code, comments, conditional complexity, and
 uncommunicative names are all examples of code smells. Individually, code smells
@@ -40,7 +40,7 @@ indicates something rotten in the product’s development.
 One of the most obvious symptoms of software cancer is an increasing number of
 bugs. Not just an increase, but a persistence of bugs. These persistent bugs
 can’t be squashed and more bugs arise in their place just as soon as others are
-put down. 
+put down.
 
 <img src="//samuelmullen.com/images/cancer/99_bugs_on_the_wall.jpg" class="img-thumbnail img-responsive" alt="99 Little Bugs on the wall" title="99 Little Bugs on the wall">
 
@@ -76,20 +76,20 @@ you’ll probably be miserable.
 Decreased morale means decreased productivity followed shortly by a decrease in
 staff. The best developers will leave first, followed by everyone
 else. This leaves the developers who either can’t find another job or don’t care
-enough to. These will be the ones maintaining the system. 
+enough to. These will be the ones maintaining the system.
 
 ## Causes
 
 Why does cancer grow in a healthy app? As with cancer in the human body, there
 is rarely one single cause. For humans, it may be a combination of environmental
 factors, stress, and what we put into our bodies. For software, however, the
-reasons are quite different. 
+reasons are quite different.
 
 ### Deviation From Best Practices
 
 <img src="//samuelmullen.com/images/cancer/best_practices.jpg" class="img-thumbnail img-responsive img-right" alt="I need you to follow best practices" title="I need you to follow best practices">
 
-Much like craftsmen in other creative fields, programmers have developed collections of best practices for programming in specific languages, their use of specific tools, deployment, source code management, and more. 
+Much like craftsmen in other creative fields, programmers have developed collections of best practices for programming in specific languages, their use of specific tools, deployment, source code management, and more.
 
 Best practices are “procedures which have been shown by research and experience to produce optimal results”. Test Driven Development (TDD), Continuous Integration (CI), rigorous refactoring, and code reviews are just a handful of practices which enable the production of superior software.
 
@@ -97,7 +97,7 @@ As with other creative fields, when programmers stray from best practices the re
 
 For more on these symptoms, visit: [The Pragmatic Programmer](https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X), [Extreme Programming Explained](https://www.amazon.com/Extreme-Programming-Explained-Embrace-Change-ebook/dp/B00N1ZN6C0/ref=sr_1_1), and [Code Complete](https://www.amazon.com/Code-Complete-Developer-Best-Practices-ebook/dp/B00JDMPOSY/ref=sr_1_1).
 
-### Inexperience 
+### Inexperience
 
 Another cause of cancerous software is often due to nothing more than inexperience. Junior developers, even those who are exceptionally skilled, lack the necessary experience which guides more seasoned developers. This experience is knowledge only attainable through doing the work and choosing to learn from it.
 
@@ -111,7 +111,7 @@ While inexperienced developers can wreak their own level of havoc on a project, 
 
 Whereas inexperience leads developers to make poor decisions out of ignorance,
 an apathetic developer makes poor programming decisions because he or she
-stopped caring. There are a number of reasons which can lead to this: 
+stopped caring. There are a number of reasons which can lead to this:
 
 * Culture - Some companies just don’t care about excellence. To these organizations, it’s just about doing the least amount of work in order to get the job done.
 * Management - When managers are apathetic about their job, those who report to them may see it as a sign that they shouldn’t care either.
@@ -146,7 +146,7 @@ tightly-coupled, inflexible code bases.
 
 Many of the projects I've been called in to rescue were in the state they were
 in because of how those organizations communicated. Discovering these issues not
-only allowed me to rescue the projects, but also showed my customers how they could correct other, more foundational issues, by changing how they communicated. 
+only allowed me to rescue the projects, but also showed my customers how they could correct other, more foundational issues, by changing how they communicated.
 
 ## Dangers
 
@@ -306,7 +306,7 @@ Joel Spolsky gave [four reasons](http://www.joelonsoftware.com/articles/fog00000
 
 I am not a proponent of rewriting applications. There are exceptions, of course
 (we’ll get to those later), but in my twenty years of programming, I’ve never
-seen a major rewrite keep the promises which were made about it. 
+seen a major rewrite keep the promises which were made about it.
 
 With that said, here are my recommendations for when to rewrite a piece of
 software:
@@ -357,7 +357,7 @@ in general, a code review should be performed before any branch or feature is
 allowed to be merged into the master branch. During the process the reviewer
 looks for logic errors and simple improvements; ensures the code matches the
 organization's style and meets the expected level of quality; and, of course,
-ensures the code actually works. 
+ensures the code actually works.
 
 In his book, "Code Complete," Steve McConnell provides the results from numerous
 case studies highlighting the effectiveness of code reviews.
@@ -385,17 +385,17 @@ benefits to code reviews:
   allow programmers to become the primary developer over specific areas of an
   application or system. This can create silos of information. These silos
   result in ignorance of other areas as well as a potential  "us vs. them"
-  mentality. Code reviews force developers to look at areas of the system 
-  outside of their purview and gain a greater understanding of the project as a 
+  mentality. Code reviews force developers to look at areas of the system
+  outside of their purview and gain a greater understanding of the project as a
   whole.
 * **It improves programming knowledge**: One of the best ways to improve
-  programming ability is to read code. Reading code exposes the developer to 
+  programming ability is to read code. Reading code exposes the developer to
   new ideas and new ways of doing things. It also encourages the thought process
-  of "how would I do things differently?". Code reviews provide this 
-  opportunity. It also allows the opportunity for more senior developers to 
+  of "how would I do things differently?". Code reviews provide this
+  opportunity. It also allows the opportunity for more senior developers to
   mentor less experienced developers.
 * **It promotes team comraderie**: When the team has a familiarity with the
-  whole project on which they all collaborate, it results in a greater sense of 
+  whole project on which they all collaborate, it results in a greater sense of
   ownership and trust in one another. It's the natural outcome of accepting a
   critique of one's creation and providing guidance to others.
 
@@ -425,7 +425,7 @@ convoluted and confusing code, and unless they've been regularly shut down in
 the past, will seek solutions to make the code base something they're proud of.
 
 Not every organization has the resources to properly fight the cancer which
-exists in their software. In those cases, it makes sense to 
+exists in their software. In those cases, it makes sense to
 [hire outside consultants](//samuelmullen.com/contact) who specialize in
 repairing legacy software. I pride myself on rehabilitating diseased and
 ailing software, and bringing new life and value to dying projects.
@@ -439,7 +439,7 @@ and even result in employee turnover. In people, cancer is even worse.
 
 Every day, more than 1,500 people die of cancer in the US alone. That's 1,500
 sons, daughters, mothers, fathers, friends, and family. It's 1,500 what might
-have beens, and 1,500 lives which will never shine their light again. 
+have beens, and 1,500 lives which will never shine their light again.
 
 It happens every day.
 

@@ -1,10 +1,10 @@
-+++
-title = "TDD: You've Been Doing It All Along"
-description = "Lots of developers wrongfully malign TDD, piling on countless arguments against it. What they don't realize is they're doing TDD; they're just not reaping any of the rewards."
-author = "Samuel Mullen"
-tags = ["tdd","testing","programming"]
-date = "2017-06-06T12:24:36-05:00"
-+++
+---
+title: "TDD: You've Been Doing It All Along"
+description: "Lots of developers wrongfully malign TDD, piling on countless arguments against it. What they don't realize is they're doing TDD; they're just not reaping any of the rewards."
+author: "Samuel Mullen"
+tags: ["tdd","testing","programming"]
+date: "2017-06-06T12:24:36-05:00"
+---
 
 Most people don't *get* TDD the first (or second, or third, or fourth) time
 they're introduced to the concept. It's not a topic that is taught in university
@@ -17,7 +17,7 @@ idea which goes against our sensibilities, prompting us to ask questions like:
 
 Even Kent Beck, TDD's "re-inventor", didn't get it at first:
 
-> [@samullen](https://twitter.com/samullen) First time I heard of it was when I (re-)invented it. I laughed out loud. Seemed absurd but worth a try.  
+> [@samullen](https://twitter.com/samullen) First time I heard of it was when I (re-)invented it. I laughed out loud. Seemed absurd but worth a try.
 > &mdash;Kent Beck ([@KentBeck](https://twitter.com/KentBeck)) [May 23, 2017](https://twitter.com/KentBeck/status/867023350627008512)
 
 Clearly TDD isn't a concept which seems reasonable to developers at first, nor
@@ -33,7 +33,7 @@ Martin Fowler describes the process like this:
 > * Write a test for the next bit of functionality you want to add.
 > * Write the functional code until the test passes.
 > * Refactor both new and old code to make it well structured.
-> 
+>
 > —Martin Fowler [TestDrivenDevelopment](https://martinfowler.com/bliki/TestDrivenDevelopment.html)
 
 More can be said about the process (and has), but that is the core of TDD.
@@ -51,7 +51,7 @@ begin using in their careers, and what most continue to use.
 
 ## You're Already Doing TDD
 
-If you look closely at the two processes—and maybe squint a little—you'll see that they're nearly identical. 
+If you look closely at the two processes—and maybe squint a little—you'll see that they're nearly identical.
 
 <table class="table">
 <tr>
@@ -136,17 +136,17 @@ describe "User#name" do
     contact = Contact.new(first_name: "User", last_name: Example")
     contact.name.must_equal "User Example"
   end
-    
+
   it "returns the first name if the last name is blank" do
     contact = Contact.new(first_name: "User")
-    contact.name.must_equal "User" 
+    contact.name.must_equal "User"
   end
-    
+
   it "returns the last name if the first name is blank" do
     contact = Contact.new(last_name: "Example")
-    contact.name.must_equal "Example" 
+    contact.name.must_equal "Example"
   end
-end 
+end
 ```
 
 You don't need to know Ruby to read the code above. The first line tells us that we are looking at the instance method `name`. Each "it" line, tells us what `name` is supposed to do in the given scenarios. We don't have to read the code, we can read the actual requirements in our language of choice.
@@ -154,12 +154,12 @@ You don't need to know Ruby to read the code above. The first line tells us that
 Developers notoriously hate writing documentation. Even when we do write it,
 we usually fail to maintain it. As they say, "Wrong documentation is worse than
 no documentation." Writing tests provides an almost effortless way of
-documenting our code. 
+documenting our code.
 
 Let's look at some hard numbers. In a Microsoft funded research paper, authors [Nagappan, Maximilien, Bhat, and Williams](https://www.microsoft.com/en-us/research/wp-content/uploads/2009/10/Realizing-Quality-Improvement-Through-Test-Driven-Development-Results-and-Experiences-of-Four-Industrial-Teams-nagappan_tdd.pdf) discovered that TDD resulted in an increase of 15-30% in initial development time, but a 40-90% decrease in defects. As one author noticed:
 
-> It is interesting to note that the figure of 15-30% longer during the coding phase. Then, the testers found 40-90% fewer bugs. That's 40-90% fewer bugs that need fixing. Now, these bugs that need fixing were found in the functional testing phase. Exact figures will vary, but it is frequently observed that bugs found here will take at least 10 times longer to fix than had they been found during development. 
-> 
+> It is interesting to note that the figure of 15-30% longer during the coding phase. Then, the testers found 40-90% fewer bugs. That's 40-90% fewer bugs that need fixing. Now, these bugs that need fixing were found in the functional testing phase. Exact figures will vary, but it is frequently observed that bugs found here will take at least 10 times longer to fix than had they been found during development.
+>
 > ––  John Ferguson Smart [For A Fistful of Dollars](https://dzone.com/articles/fistful-dollars-quantifying)
 
 Furthermore, Matt Hawley collated the benefits and results of several research papers in his article [TDD Research Findings](https://weblogs.asp.net/mhawley/114005) and provided the following list:
@@ -174,7 +174,7 @@ Furthermore, Matt Hawley collated the benefits and results of several research p
 These findings are great if you are making a case to management to allow you and your team to start practicing TDD, or even if you're just participating in an internet debate. But the real benefit of TDD is summarized by "Uncle" Bob Martin in his answer to a question on Quora:
 
 > If you follow TDD, and use it to build a test suite that you trust.  And if that test suite executes in seconds (a design goal).  Then you will not be afraid of the code.  You will not be afraid to clean it.  You will not be afraid to fix it.  You won't be afraid to do anything to the code, because your tests will tell you if you've broken it.
-> 
+>
 > —Uncle Bob Martin (https://www.quora.com/What-are-the-benefits-of-TDD)
 
 ## Getting Started

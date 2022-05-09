@@ -1,10 +1,10 @@
-+++
-title = "Tools We Use: Hugo"
-author = "Samuel Mullen"
-date = "2015-08-12T06:41:20-05:00"
-description = "Hugo is the tool I use to build the SamuelMullen site."
-tags = ["tools"]
-+++
+---
+title: "Tools We Use: Hugo"
+author: "Samuel Mullen"
+date: "2015-08-12T06:41:20-05:00"
+description: "Hugo is the tool I use to build the SamuelMullen site."
+tags: ["tools"]
+---
 
 Unlike many brochure sites on the web, this site is a static HTML site.
 This means all the pages are created once, prior to deployment. It also means
@@ -31,4 +31,4 @@ to generator this site.
 
 This solution is right for me, because it fits within my existing workflow
 without disruption, but I would never recommend it to any of my existing or
-previous clients; it's not the right solution for them. 
+previous clients; it's not the right solution for them.

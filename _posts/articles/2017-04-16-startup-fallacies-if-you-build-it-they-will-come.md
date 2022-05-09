@@ -1,18 +1,18 @@
-+++
-title = "Startup Fallacies: If You Build It, They Will Come"
-author = "Samuel Mullen"
-description = "Many startups believe 'if they build it, they will come', but this only leads to disaster as they build the wrong product for an imaginary audience. Find out why this is such a horrible mistake, why so many fall into the trap, and what to do about it if you find yourself there."
-date = "2017-04-16T11:05:56-05:00"
-tags = [ "startup fallacies", "business", "startups", "marketing" ]
-+++
+---
+title: "Startup Fallacies: If You Build It, They Will Come"
+author: "Samuel Mullen"
+description: "Many startups believe 'if they build it, they will come', but this only leads to disaster as they build the wrong product for an imaginary audience. Find out why this is such a horrible mistake, why so many fall into the trap, and what to do about it if you find yourself there."
+date: "2017-04-16T11:05:56-05:00"
+tags: [ "startup fallacies", "business", "startups", "marketing" ]
+---
 
-In the movie, Field of Dreams, Kevin Costner plays an Iowa farmer named Ray Kinsella. As a farmer, Ray has fallen on hard times, but while standing in his corn field one day, he sees a vision of a baseball field where part of his cornfield is accompanied by a voice telling him, "If you build it, he will come". 
+In the movie, Field of Dreams, Kevin Costner plays an Iowa farmer named Ray Kinsella. As a farmer, Ray has fallen on hard times, but while standing in his corn field one day, he sees a vision of a baseball field where part of his cornfield is accompanied by a voice telling him, "If you build it, he will come".
 
 <img src="//samuelmullen.com/images/startup_fallacies/field_of_dreams-voices.jpg" class="img-thumbnail img-responsive img-right" alt="Hearing voices" title="Hearing voices">
 
 Ray then sets out to build the baseball field from his vision, being spurred onward by the disembodied voice telling him that if he builds it, "he" or "they" will come. Ignoring the pleas of his wife and brother, and the advice of his neighbors, Ray builds the baseball field. Slowly, as his friends and family witness long dead baseball players take to the field, he wins them to his vision, culminating with James Earl Jones' character, Terence Mann, saying:
 
-> Ray, people will come Ray. They'll come to Iowa for reasons they can't even fathom. They'll turn up your driveway not knowing for sure why they're doing it. They'll arrive at your door as innocent as children, longing for the past. Of course, we won't mind if you look around, you'll say. It's only $20 per person. They'll pass over the money without even thinking about it: for it is money they have and peace they lack. And they'll walk out to the bleachers; sit in shirtsleeves on a perfect afternoon. They'll find they have reserved seats somewhere along one of the baselines, where they sat when they were children and cheered their heroes. And they'll watch the game and it'll be as if they dipped themselves in magic waters. The memories will be so thick they'll have to brush them away from their faces. People will come Ray.  
+> Ray, people will come Ray. They'll come to Iowa for reasons they can't even fathom. They'll turn up your driveway not knowing for sure why they're doing it. They'll arrive at your door as innocent as children, longing for the past. Of course, we won't mind if you look around, you'll say. It's only $20 per person. They'll pass over the money without even thinking about it: for it is money they have and peace they lack. And they'll walk out to the bleachers; sit in shirtsleeves on a perfect afternoon. They'll find they have reserved seats somewhere along one of the baselines, where they sat when they were children and cheered their heroes. And they'll watch the game and it'll be as if they dipped themselves in magic waters. The memories will be so thick they'll have to brush them away from their faces. People will come Ray.
 > Field of Dreams
 
 This story makes for a great movie, but when applied to business, "if you build it, they will come" will only end in disaster.
@@ -27,7 +27,7 @@ Ash Maurya wrote in *[Running Lean](https://www.goodreads.com/book/show/13078769
 
 Finding customers is hard. It's hard enough that marketers invented the "Rule of Seven" which says, "a prospect needs to see or hear your marketing message at least seven times before they take action and buy from you." ([The Baby Boomer Entrepreneur](http://www.thebabyboomerentrepreneur.com/258/what-is-the-rule-of-seven-and-how-will-it-improve-your-marketing/)) This explains the average conversion rates for web products:
 
-> Typical conversion rates are between 0.5% and 4% depending on your price range and customer base. What that means is that for every 1,000 websites visitors, between 960 and 995 will show up and leave without doing a thing.  
+> Typical conversion rates are between 0.5% and 4% depending on your price range and customer base. What that means is that for every 1,000 websites visitors, between 960 and 995 will show up and leave without doing a thing.
 > –Rob Walling, *[Start Small, Stay Small](https://www.goodreads.com/book/show/9167158-start-small-stay-small)*
 
 A startup is in the business of building something new, something that has never been seen before, something unfamiliar. Unfortunately, people, even early adopters, have a tendency to shy away from new ideas and products. As a species, we don't immediately see the value in what's new.
@@ -42,11 +42,11 @@ To begin with, I'm not convinced founders believe it works, nor do I believe the
 
 Most founders don't have a background in either sales or marketing, and even though they've read articles and listened to podcasts exhorting them to "[Start Marketing the Day You Start Coding](http://www.softwarebyrob.com/2010/10/14/startup-marketing-part-6-why-you-should-start-marketing-the-day-you-start-coding/)", they just don't know where to begin. Maybe they know enough to build a landing page to capture email addresses, but do they know what to say on that page and how to say it? Do they know where to go to promote their product and how to do it once they get there?
 
-Figuring out these answers is difficult and it takes time. Many founders are launching a startup "on the side". With their limited time, they have to choose between building the product (what they know how to do), and marketing and selling the product (what they don't know how to do). Improving the product is the path of least resistance, but it's also "The Product Trap: the fallacy that the best use of your time is always improving your product." ([Traction](https://www.goodreads.com/book/show/22091581-traction)) 
+Figuring out these answers is difficult and it takes time. Many founders are launching a startup "on the side". With their limited time, they have to choose between building the product (what they know how to do), and marketing and selling the product (what they don't know how to do). Improving the product is the path of least resistance, but it's also "The Product Trap: the fallacy that the best use of your time is always improving your product." ([Traction](https://www.goodreads.com/book/show/22091581-traction))
 
-But marketing is only the first half of the problem. Once you've attracted customers to your product, the next step is to talk to them and determine if what is being built will meet their needs (i.e. establishing product/market fit). 
+But marketing is only the first half of the problem. Once you've attracted customers to your product, the next step is to talk to them and determine if what is being built will meet their needs (i.e. establishing product/market fit).
 
-For many startups, this can be even more difficult than marketing. After all, building a product takes time, effort, and money: time that could have been spent with your family; effort which could have been put toward other endeavors; and money which could have been invested with less risk. To discover, after having spoken with customers, that the time, effort, and money you've invested in your product has been wasted because you built the wrong thing is soul-crushing. 
+For many startups, this can be even more difficult than marketing. After all, building a product takes time, effort, and money: time that could have been spent with your family; effort which could have been put toward other endeavors; and money which could have been invested with less risk. To discover, after having spoken with customers, that the time, effort, and money you've invested in your product has been wasted because you built the wrong thing is soul-crushing.
 
 Rather than discovering what they've built is the wrong product, and enduring the heartache of figuring out the truth, many founders would rather blissfully go on unaware of what they've done. No founder would put it in those words, of course. They would instead give the excuse that the product needs one or two more features before it's ready to be shown to customers.
 
@@ -58,7 +58,7 @@ Marketing really wouldn't be so bad if there was more certainty involved in it. 
 
 <img src="//samuelmullen.com/images/startup_fallacies/field_of_dreams-suck.jpg" class="img-thumbnail img-responsive img-right" alt="Embrace the suck" title="Embrace the suck">
 
-At some point you just have to "embrace the suck" of marketing. No, you won't know what you're doing in the beginning, but putting it off isn't going to grant you any new knowledge later. It's just going to put you behind, and you need all the time you can get to find where your target customers are, and how to best reach them. 
+At some point you just have to "embrace the suck" of marketing. No, you won't know what you're doing in the beginning, but putting it off isn't going to grant you any new knowledge later. It's just going to put you behind, and you need all the time you can get to find where your target customers are, and how to best reach them.
 
 You have to recognize that developing your traction channels–even when you don't know what you're doing–is productive work. You're finding where your customers are, what they like and what they don't, you're learning what terminology to use, and what resonates with their pain points. It just doesn't "feel" productive because it's not where you're most comfortable and because there's so much uncertainty around the decisions you have to make.
 
@@ -68,7 +68,7 @@ The feedback you receive isn't always positive, and that's a good thing. Negativ
 
 ## If You Market It, They Will Come
 
-I would love to say, "show me a product built with the strategy of 'If you build it, they will come', and I'll show you a hundred others that failed with the same strategy," but I can't. Those "hundred others" died in obscurity. Maybe they were the next unicorn or maybe they were just a lifestyle business, but we'll never know because no one heard about them. 
+I would love to say, "show me a product built with the strategy of 'If you build it, they will come', and I'll show you a hundred others that failed with the same strategy," but I can't. Those "hundred others" died in obscurity. Maybe they were the next unicorn or maybe they were just a lifestyle business, but we'll never know because no one heard about them.
 
 <img src="//samuelmullen.com/images/startup_fallacies/field_of_dreams-traffic.jpg" class="img-thumbnail img-responsive img-right" alt="Traffic to the field of dreams" title="Traffic to the field of dreams">
 

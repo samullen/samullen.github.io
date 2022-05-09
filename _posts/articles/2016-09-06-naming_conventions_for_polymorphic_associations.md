@@ -1,12 +1,12 @@
-+++
-title = "Naming Conventions for ActiveRecord Polymorphic Associations"
-author = "Samuel Mullen"
-date = "2016-09-06T21:21:08-05:00"
-description = "Some guidelines for how to name ActiveRecord's polymorphic associations well."
-tags = ["activerecord", "rails"]
-+++
+---
+title: "Naming Conventions for ActiveRecord Polymorphic Associations"
+author: "Samuel Mullen"
+date: "2016-09-06T21:21:08-05:00"
+description: "Some guidelines for how to name ActiveRecord's polymorphic associations well."
+tags: ["activerecord", "rails"]
+---
 
-Ruby on Rails has a lot of great features to help build web applications quickly: migrations, view helpers, text manipulation methods, and more. One of the handier features – and one we're using extensively in a current project – is [polymorphic associations](http://guides.rubyonrails.org/association_basics.html#polymorphic-associations). 
+Ruby on Rails has a lot of great features to help build web applications quickly: migrations, view helpers, text manipulation methods, and more. One of the handier features – and one we're using extensively in a current project – is [polymorphic associations](http://guides.rubyonrails.org/association_basics.html#polymorphic-associations).
 
 Polymorphic associations allow a model to "belong to" multiple models through a single association. To make this happen, a model must have two new fields added noting the "ID" of the record and "type" of the class the record belongs to. The convention is to name the ID and type fields prefixed with an adjective ending in the "able" suffix. Some simple examples might include `postable_id` and `postable_type`, `commentable_id` and `commentable_type`, and `notable_id` and `notable_type`.
 

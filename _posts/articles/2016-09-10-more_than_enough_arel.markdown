@@ -1,11 +1,11 @@
-+++
-author = "Samuel Mullen"
-date = "2016-09-10T06:13:46-05:00"
-description = "When ActiveRecord just isn't enough"
-tags = ["rails", "ruby","arel","activerecord","sql"]
-title = "More than Enough Arel"
-canonical = "http://radar.oreilly.com/2014/05/more-than-enough-arel.html"
-+++
+---
+author: "Samuel Mullen"
+date: "2016-09-10T06:13:46-05:00"
+description: "When ActiveRecord just isn't enough"
+tags: ["rails", "ruby","arel","activerecord","sql"]
+title: "More than Enough Arel"
+canonical: "http://radar.oreilly.com/2014/05/more-than-enough-arel.html"
+---
 
 **Note:** *This is the second article about the Arel library I wrote for
 [O'Reilly Publishing's Radar blog](http://radar.oreilly.com/).*

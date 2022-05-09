@@ -1,10 +1,10 @@
-+++
-title = "What is Technical Debt?"
-author = "Samuel Mullen"
-tags = ["technical debt","clean code"]
-date = "2017-05-04T09:39:48-05:00"
-description = "'Technical Debt' is a metaphor we use in the tech industry to describe the deficiencies in our code base. Did you know there are different types of technical debt and that not all debt is a bad thing?"
-+++
+---
+title: "What is Technical Debt?"
+author: "Samuel Mullen"
+tags: ["technical debt","clean code"]
+date: "2017-05-04T09:39:48-05:00"
+description: "'Technical Debt' is a metaphor we use in the tech industry to describe the deficiencies in our code base. Did you know there are different types of technical debt and that not all debt is a bad thing?"
+---
 
 Every industry has terms and phrases it uses to help describe complex concepts and practices. Some are intended for use within the industry, while others are used to help convey industry-specific concepts to those outside the industry. One such term we use in software engineering is "technical debt".
 
@@ -20,7 +20,7 @@ That's technical debt. The first "loan" was taken out when your developer took a
 
 You can see from the example that there are two kinds of debt in play: One which was taken on at the beginning in order to launch the product, and another which wasn't even noticed until it was too late.
 
-Martin Fowler recognized the distinctions in technical debt and broke it up into quadrants. The quadrants provide a distinction between prudent and reckless actions, and those which are either intentional or inadvertent: 
+Martin Fowler recognized the distinctions in technical debt and broke it up into quadrants. The quadrants provide a distinction between prudent and reckless actions, and those which are either intentional or inadvertent:
 
 <img src="//samuelmullen.com/images/what_is_technical_debt/quadrants.png" class="img-thumbnail img-responsive center-block" alt="technical debt quadrants" title="Technical debt quadrants">
 
@@ -44,9 +44,9 @@ You are never more ignorant about how things should be done than when you first 
 
 ## Why Technical Debt is Bad
 
-The problem with technical debt is that any time you want to make new investments in your product (new features, bug fixes, performance improvements, etc.,) you must first pay the accumulated interest. However, if all you do is pay the minimum, you will only add to your debt burden with every change you make. 
+The problem with technical debt is that any time you want to make new investments in your product (new features, bug fixes, performance improvements, etc.,) you must first pay the accumulated interest. However, if all you do is pay the minimum, you will only add to your debt burden with every change you make.
 
->Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise. 
+>Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise.
 >
 >*Ward Cunningham*
 
@@ -81,11 +81,11 @@ As you may have already guessed, it's impossible to avoid technical debt complet
 
 ### Understand the Problem
 
-Much of why unused features, bugs, and technical debt exists in so many applications is because the teams developing them didn't fully understand the problem(s) they were trying to solve. This can be the result of not having product/market fit (i.e. lots of pivots), a lack of a clear vision, management just chasing squirrels, or any number of other things. 
+Much of why unused features, bugs, and technical debt exists in so many applications is because the teams developing them didn't fully understand the problem(s) they were trying to solve. This can be the result of not having product/market fit (i.e. lots of pivots), a lack of a clear vision, management just chasing squirrels, or any number of other things.
 
 Regardless of the reason, the results are the same, leaving your product with inefficient and overly complex code, unused code from developers being sent down blind alleys, and features no one uses.
 
-Limiting this requires you to truly understand the problem and communicating it to your team. 
+Limiting this requires you to truly understand the problem and communicating it to your team.
 
 ### Accelerate Iterations
 

@@ -1,24 +1,23 @@
-+++
-author = "Samuel Mullen"
-date = "2016-09-17T07:07:04-05:00"
-description = "Reducing object bloat begins with doing less"
-tags = ["ruby", "patterns"]
-title = "Delegation Patterns in Ruby"
-canonical = "http://radar.oreilly.com/2014/02/delegation-patterns-in-ruby.html"
-
-+++
+---
+author: "Samuel Mullen"
+date: "2016-09-17T07:07:04-05:00"
+description: "Reducing object bloat begins with doing less"
+tags: ["ruby", "patterns"]
+title: "Delegation Patterns in Ruby"
+canonical: "http://radar.oreilly.com/2014/02/delegation-patterns-in-ruby.html"
+---
 
 **Note:** *I originally wrote this article for O'Reilly Publishing. I'm reposting it here with permission, and referencing the [canonical link](http://radar.oreilly.com/2014/02/delegation-patterns-in-ruby.html).*
 
 In almost every project there are those objects which seemingly get involved in every aspect of the application.  These are the so-called “god objects”: they can do everything (omnipotent), they know everything (omniscient), and they are everywhere in the application (omnipresent). Most often these are objects which are at the intersections of business logic: User or Account, Project, and Order are all usual suspects.
 
-One of the core tenants of object-oriented programming is that large problems are made up of many smaller problems, and as such, can be solved by providing solutions to those smaller problems in the form of objects. God objects violate this core tenet by trying to be one solution for too many problems. 
+One of the core tenants of object-oriented programming is that large problems are made up of many smaller problems, and as such, can be solved by providing solutions to those smaller problems in the form of objects. God objects violate this core tenet by trying to be one solution for too many problems.
 
 A typical example of a god object is the User model of many Rails applications.  Here, User might be responsible for user specific information as well as knowing about phone numbers, emails, profile information, preferences, and handling authentication. It’s too much and it results in User being coupled to every aspect of the application.
 
 Although there are many tactics a developer can employ to limit the influence of these “god objects”, one of the simplest is just reassigning some of their responsibility, and using a delegation pattern may be the simplest way to do just that.
 
-Let’s look at four different ways we can use delegation in Ruby. 
+Let’s look at four different ways we can use delegation in Ruby.
 
 Delegation by Default
 ---------------------
@@ -213,4 +212,4 @@ end
 
 In Object Oriented Programming, delegation is an incredibly useful pattern, and – as is so often the case in Ruby – there are numerous ways to implement it. It is not some elusive concept which is difficult to nail down, but one which we encounter regularly through typical OO development.
 
-Not only is delegation simple, it is powerful in that it allows us to limit the power of our objects.  Through effective use of inheritance, message passing, and forwarding of responsibility, we can create opportunities to segment our classes and delineate responsibility. Delegation helps us bring those “god objects” back down to earth. 
+Not only is delegation simple, it is powerful in that it allows us to limit the power of our objects.  Through effective use of inheritance, message passing, and forwarding of responsibility, we can create opportunities to segment our classes and delineate responsibility. Delegation helps us bring those “god objects” back down to earth.
