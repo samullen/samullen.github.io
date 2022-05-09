@@ -1,11 +1,10 @@
-+++
-title = "Why You're Not Speaking at User Groups, and Why You Should"
-author = "Samuel Mullen"
-description = "The easiest thing you can do to support your local user group is to present, so why don't you? More importantly, what are you missing out on by not speaking?"
-date = "2017-02-15T06:16:16-06:00"
-tags = [ "speaking", "business" ]
-
-+++
+---
+title: "Why You're Not Speaking at User Groups, and Why You Should"
+author: "Samuel Mullen"
+description: "The easiest thing you can do to support your local user group is to present, so why don't you? More importantly, what are you missing out on by not speaking?"
+date: "2017-02-15T06:16:16-06:00"
+tags: [ "speaking", "business" ]
+---
 
 User groups are great. Much like conferences, they offer a forum where we can learn about new technologies and methodologies, meet others with similar interests, find work, and also just let our geek flag fly. Unlike conferences, however, user groups are smaller, less formal affairs, and provide a regular opportunity to mingle with people in the local community. Even the most socially awkward of us can feel comfortable in the intimacy of a user group.
 
@@ -30,7 +29,7 @@ This can be a difficult problem. I find that keeping a list of possible topics t
 
 ### I'm terrified of public speaking
 
-> According to most studies, people’s number one fear is public speaking. Number two is death. Death is number two. Does that seem right? That means to the average person, if you have to go to a funeral, you’re better off in the casket than doing the eulogy.  
+> According to most studies, people’s number one fear is public speaking. Number two is death. Death is number two. Does that seem right? That means to the average person, if you have to go to a funeral, you’re better off in the casket than doing the eulogy.
 > – Jerry Seinfeld
 
 This is a tough one, because fear is such a powerful thing. I don't want people pushing me to look over the edge of the Empire State Building when I'm not comfortable even being above the 10th floor *inside* a building, so it wouldn't be fair of me to push others into public speaking when they're terrified of it. I will say this: I understand the fear and feel it every time I speak in front of a large audience. Things calm down once you get going, but you have to get going first, and you'll feel on top of the world when it's over.

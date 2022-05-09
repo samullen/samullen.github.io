@@ -1,11 +1,11 @@
-+++
-author = "Samuel Mullen"
-date = "2016-09-09T21:36:28-05:00"
-description = "Replacing hand-coded SQL with object oriented programming"
-tags = ["rails", "activerecord", "ruby", "sql", "arel"]
-title = "Just Enough Arel"
-canonical = "http://radar.oreilly.com/2014/03/just-enough-arel.html"
-+++
+---
+author: "Samuel Mullen"
+date: "2016-09-09T21:36:28-05:00"
+description: "Replacing hand-coded SQL with object oriented programming"
+tags: ["rails", "activerecord", "ruby", "sql", "arel"]
+title: "Just Enough Arel"
+canonical: "http://radar.oreilly.com/2014/03/just-enough-arel.html"
+---
 
 **Note:** *I originally wrote [Just Enough Arel](http://radar.oreilly.com/2014/03/just-enough-arel.html) for [O'Reilly Publishing's Radar Blog](http://radar.oreilly.com/) in early 2014. I'm reposting it here because we frequently reference the article and our site loads faster.* :)
 
@@ -52,7 +52,7 @@ def self.post
   self.arel_table
 end
 # Force the class method to be private (optional)
-private_class_method :post 
+private_class_method :post
 ```
 
 Arel Attribute
@@ -78,7 +78,7 @@ Post.arel_table[:title].matches('%updated')
 Post.arel_table[:published_at].gt(1.year.ago).
   or(Post.arel_table[:title].matches('%updated')).to_sql
 
-# => "("posts"."published_at" > '2013-03-16 20:00:16.797360' 
+# => "("posts"."published_at" > '2013-03-16 20:00:16.797360'
 #      OR "posts"."title" ILIKE '%updated')"
 ```
 

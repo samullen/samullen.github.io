@@ -1,10 +1,10 @@
-+++
-title = "Replacing the Rails Asset Pipeline with Webpack and Yarn"
-description = "In this tutorial we look at how to completely replace the Rails Asset Pipeline with tools from the the Javascript ecosystem, Webpack and Yarn." 
-date = "2016-11-15T20:31:49-06:00"
-tags = [ "rails", "javascript", "tutorials", "toolin"]
-author = "Samuel Mullen"
-+++
+---
+title: "Replacing the Rails Asset Pipeline with Webpack and Yarn"
+description: "In this tutorial we look at how to completely replace the Rails Asset Pipeline with tools from the the Javascript ecosystem, Webpack and Yarn."
+date: "2016-11-15T20:31:49-06:00"
+tags: [ "rails", "javascript", "tutorials", "toolin"]
+author: "Samuel Mullen"
+---
 
 <em>**Update:** Since this article was published, the Rails team announced the
 inclusion of both webpack and Yarn into Rails 5.1. I have a new article covering
@@ -20,7 +20,7 @@ just make the bad Javascript man go away? If you install the libraries manually,
 it's up to you to ensure all the dependent libraries are also installed. If you
 rely on a gem, you must rely on the gem maintainer to keep things current. It's
 a real problem, and we're not even considering the minor detail of version
-compatibility amongst the various javascript libraries in both scenarios. 
+compatibility amongst the various javascript libraries in both scenarios.
 
 ## What's the solution?
 
@@ -30,7 +30,7 @@ conceived. It provided a solution to breaking cached assets with fingerprints,
 it concatenated and minified both CSS and Javascript, and it even accounted for
 fonts, images, and whatever else we wanted to throw in there. What it didn't
 account for was how dominant [Node.js](https://nodejs.org/) and all the frontend
-frameworks would become. 
+frameworks would become.
 
 Today, when you look at any Javascript library, the installation
 instructions can be summed up with this: `npm install libraryname`. There are no
@@ -156,7 +156,7 @@ pipeline.
 ### The Gemfile
 
 To begin cutting our ties to the past, we need to first remove some Ruby
-dependencies. 
+dependencies.
 
 Comment out or delete the following gems from your `Gemfile` and run `bundle`
 from the command line:
@@ -207,7 +207,7 @@ in a bit of a pickle: we're stuck with raw CSS and Javascript. Let's fix that.
 ### Babel -> ES6
 
 First, the bad news: This tutorial doesn't cover adding CoffeeScript. Now the
-good news: ES6 more than makes up for it. 
+good news: ES6 more than makes up for it.
 
 CoffeeScript made Javascript nicer by cleaning up the syntax, simplifying class
 creation, perform string interpolation, and call functions. ES6 is doing the
@@ -215,7 +215,7 @@ same thing, albeit with a more Javascript feel, and it will be the language
 browsers eventually switch too.
 
 [Babel](http://babeljs.io/) is the library we'll use to transpile ES6 to pure
-Javascript. We can install it with the following command: 
+Javascript. We can install it with the following command:
 
 ```bash
 yarn add --dev babel-core babel-preset-es2015 babel-polyfill
@@ -340,7 +340,7 @@ asset file; 2) deleting the previously compiled files.
 ### Giving Rails the Fingerprint
 
 The easiest way to provide Rails the fingerprint is to dump the hash into an
-configuration file. We can do that by dumping it into an initializer. 
+configuration file. We can do that by dumping it into an initializer.
 
 To work with files, we'll first need to include the File System (`fs`) module at
 the top of your webpack.config.js:
@@ -367,12 +367,12 @@ plugins: [
 
 This function opens the `config/initializers/fingerprint.rb` file for
 writing and then adds the `ASSET_FINGERPRINT` constant and hash to the file. If
-the file already exists, it just overwrites it. 
+the file already exists, it just overwrites it.
 
 Unfortunately, if we only rely on retrieving the fingerprint from the
 initializer, it means we'll need to restart the Rails server each time we change
 and recompile an asset. That won't do. To get around that, we'll want to change
-some behavior depending on whether or not we're running in production. 
+some behavior depending on whether or not we're running in production.
 
 Add the following lines near the top of your `webpack.config.js` file:
 
@@ -569,7 +569,7 @@ module.exports = {
       },
     ]
   },
-  
+
   plugins: [
     new ExtractTextPlugin(css_output_template),
 

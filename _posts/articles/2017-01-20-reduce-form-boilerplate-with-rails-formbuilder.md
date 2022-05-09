@@ -1,10 +1,10 @@
-+++
-tags = ["forms","rails"]
-author = "Samuel Mullen"
-title = "Reduce Form Boilerplate with Rails' FormBuilder"
-description = "Different frameworks impose different styles on forms, but they all end up requiring more boilerplate. You can either accept the pain boilerpating brings with it, or work around it. Creating your own FormBuilder is a simple way to do just that."
-date = "2017-01-20T20:03:51-06:00"
-+++
+---
+tags: ["forms","rails"]
+author: "Samuel Mullen"
+title: "Reduce Form Boilerplate with Rails' FormBuilder"
+description: "Different frameworks impose different styles on forms, but they all end up requiring more boilerplate. You can either accept the pain boilerpating brings with it, or work around it. Creating your own FormBuilder is a simple way to do just that."
+date: "2017-01-20T20:03:51-06:00"
+---
 
 Larry Wall famously wrote, "The three chief virtues of a programmer are: Laziness, Impatience[,] and Hubris." (Editor: added Oxford comma. Come at me, bro.) These three traits are the reason you hate writing the same blocks of HTML over and over again, and the reason for your frustrations with HTML frameworks like [Bootstrap](http://getbootstrap.com). Because this is a lot of typing just to display a simple form field:
 
@@ -16,7 +16,7 @@ Larry Wall famously wrote, "The three chief virtues of a programmer are: Lazines
 </div>
 ```
 
-It's these three "virtues" that led developers to create [Formtastic](https://github.com/justinfrench/formtastic) and [Simple Form](https://github.com/plataformatec/simple_form), and it's these same virtues which might lead you to roll your own solution as well. If that's the direction you're headed, read on. 
+It's these three "virtues" that led developers to create [Formtastic](https://github.com/justinfrench/formtastic) and [Simple Form](https://github.com/plataformatec/simple_form), and it's these same virtues which might lead you to roll your own solution as well. If that's the direction you're headed, read on.
 
 Setup
 -------
@@ -139,7 +139,7 @@ def merge_options(defaults, new_options)
 end
 ```
 
-In the `text_field` method, it concatenates our default CSS `class` with any new CSS classes we added in the view. 
+In the `text_field` method, it concatenates our default CSS `class` with any new CSS classes we added in the view.
 
 Example:
 
@@ -179,11 +179,11 @@ def text_layout(method, options, defaults={})
 end
 ```
 
-As you'll notice, the `text_layout` method is exactly the same as our `text_field` method, with two exceptions 
+As you'll notice, the `text_layout` method is exactly the same as our `text_field` method, with two exceptions
 
 1. It accepts a new `defaults` hash to allow element-specific attributes for our different element types.
 2. It "yields" to the block passed to it instead of calling `super`.
- 
+
 Let's change our `text_field` to use this new method:
 
 ```
@@ -234,7 +234,7 @@ As shown above, you need to pass `form_for` the builder every time you use it. I
 
 ### Creating a Helper Method
 
-The first option is to create a helper method that sets some defaults and then passes those along to `form_for`. 
+The first option is to create a helper method that sets some defaults and then passes those along to `form_for`.
 
 ```
 def bootstrapped_form_for(object, options={}, &block)
