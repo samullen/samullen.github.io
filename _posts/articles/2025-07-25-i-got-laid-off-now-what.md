@@ -10,7 +10,7 @@ categories: [personal, employment]
 
 # What happened?
 
-<img src="http://localhost:4000/assets/images/avatar-lg-2025.png" class="img-thumbnail img-responsive img-right" alt="Avatar" title="Avatar" width="600">
+<img src="//samuelmullen.com/images/avatar-lg-2025.png" class="img-thumbnail img-responsive img-right" alt="Avatar" title="Avatar" width="600">
 
 "Huh. That's weird." That was my first thought when I received a calendar invite
 from our CPO (Chief Product Officer)/head of engineering (which is also weird).
