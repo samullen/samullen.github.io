@@ -3,6 +3,7 @@ title: I Got Laid Off. Now What?
 date: 2025-07-25T00:00-05:00
 draft: false
 description: "I got laid off. Then came the questions: what happened, what now, and what’s next? This is a personal reflection on losing a job, dealing with the aftermath, and finding a way forward."
+image: /assets/images/avatar-lg-2025.png
 comments: false
 post: true
 categories: [personal, employment]

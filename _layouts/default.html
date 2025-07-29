@@ -8,6 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ page.description }}">
   <meta name="author" content="{{ page.author }}">
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:description" content="{{ page.description }}" />
+  {% if page.image %}
+  <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
+  {% endif %}
 
   {% if page.title == null %}
     <title>Samuel Mullen</title>
