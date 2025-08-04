@@ -65,9 +65,9 @@ your boss about their perspective on where you fall short. They should know
 better than anyone what they're looking for and what's expected, and they should
 also know where you are in relation to that next step. Be warned, however, they
 may point out that you still have work to do to fulfill your current position.
-Regardless of what they say&mdash;nd potentially how they say it&mdash;listen to
-them and consider their feedback. They're the one who will be recommending you
-for promotion, and ignoring their feedback will only set you up for failure.
+Regardless of what they say&mdash;and potentially how they say it&mdash;listen
+to them and consider their feedback. They're the one who will be recommending
+you for promotion, and ignoring their feedback will only set you up for failure.
 
 ## External Gaps
 
@@ -88,7 +88,7 @@ unique to your team, but one thing is for certain: you'll need to outwork
 everyone else.
 
 <aside class="panel panel-default pull-right col-md-4">
-<h3>True story</h3>
+<h3>In practice</h3>
 <p>There was an engineer on the first team I managed who regularly asked me if
 there was anything I needed help with, for extra work, or he could run meetings
 while I was on PTO. After a while, he didn't need to ask, because he was the
@@ -181,4 +181,4 @@ else entirely. Some gaps can only be overcome by going around or even backwards.
 Promotions rarely go to the person who simply wants the job&mdash;they go to the
 person who's ready to fill it. Look around, where are the gaps? Fill them.
 Quietly. Consistently. Continuously. When the time comes, no one will question
-whether you're ready; they'll assume the job is yours.
+whether you're ready; they'll assume the job is yours already.
