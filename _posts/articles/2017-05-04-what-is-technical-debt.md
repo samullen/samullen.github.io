@@ -22,7 +22,7 @@ You can see from the example that there are two kinds of debt in play: One which
 
 Martin Fowler recognized the distinctions in technical debt and broke it up into quadrants. The quadrants provide a distinction between prudent and reckless actions, and those which are either intentional or inadvertent:
 
-<img src="//samuelmullen.com/images/what_is_technical_debt/quadrants.png" class="img-thumbnail img-responsive center-block" alt="technical debt quadrants" title="Technical debt quadrants">
+<img src="//samuelmullen.com/assets/images/what_is_technical_debt/quadrants.png" class="img-thumbnail img-responsive center-block" alt="technical debt quadrants" title="Technical debt quadrants">
 
 By combining the two groups, we end up with four possible types of technical debt.
 
