@@ -4,8 +4,14 @@ layout: default
 
 <!-- Page Content -->
 <div class="container">
+
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
+      <div class="alert alert-success alert-dismissible" role="alert" style="margin-top: 20px;">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>Hey there!</strong> I’m on the lookout for my next engineering leadership adventure. If you know of any roles or want to connect, I’m all ears!
+      </div>
+
       <h1 class="page-header">
         Articles
       </h1>
@@ -13,6 +19,7 @@ layout: default
   </div>
 
   <div class="row">
+
     <!-- Blog Entries Column -->
     <div class="col-md-10 col-md-offset-1">
       {% for post in paginator.posts %}
