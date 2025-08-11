@@ -12,7 +12,7 @@ any other reason, reach out.
 
 I'm serious. How can I help?
 
-Get in touch with me using the form below, find me on [Twitter](http://twitter.com) ([@samullen](http://twitter.com/samullen)), or just call me at [913.626.9787](tel:9136269787).
+Get in touch with me using the form below, find me on [LinkedIn](https://linkedin.com/in/samuelmullen/).
 
 <div class="row">
 <div class="col-md-12">
