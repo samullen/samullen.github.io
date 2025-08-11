@@ -4,15 +4,16 @@ title: "Contact"
 comments: false
 ---
 
-"How can I help?" Everyone asks it, but not everyone means it.
+<strong>How can I help?</strong>
 
-If you have questions about something I wrote or a technology I use, if you need
-a second opinion or help with a decision, if you're interested in hiring me, or
-any other reason, reach out.
+How can I help?
+Everyone says it, but not everyone means it.
 
-I'm serious. How can I help?
+Whether you have a question about something I’ve written, want to talk through a technical challenge, need a second opinion, or are exploring a potential collaboration—reach out.
 
-Get in touch with me using the form below, find me on [LinkedIn](https://linkedin.com/in/samuelmullen/).
+Seriously. How can I help?
+
+Use the form below, or connect with me on [LinkedIn](https://linkedin.com/in/samuelmullen/).
 
 <div class="row">
 <div class="col-md-12">
