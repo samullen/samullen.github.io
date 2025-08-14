@@ -9,7 +9,7 @@ post: true
 categories: [hiring, interviewing, employment]
 ---
 
-<img src="{{ site.url }}{{ page.image }}/assets/images/stress-test-to-skills-test/stress_v_skills.png" class="img-thumbnail img-right">
+<img src="{{ site.url }}{{ page.image }}" class="img-thumbnail img-right">
 
 20 minutes. That's how long I sat staring at a blank page while the interviewer
 waited, patiently observing. 20 minutes of considering the different
