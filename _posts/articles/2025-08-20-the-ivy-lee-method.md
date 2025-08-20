@@ -14,7 +14,7 @@ categories: [productivity]
 This idea isn't original. In fact it's over 100 years old. It's a productivity
 method created by a man named Ivy Lee when he was asked by Charles M. Schwab to
 help him "increase the efficiency of his team and discover better ways to get
-things done."
+things done." ([The Ivy Lee Method - James Clear](https://jamesclear.com/ivy-lee))
 
 ## What it is
 
