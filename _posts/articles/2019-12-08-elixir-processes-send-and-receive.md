@@ -424,7 +424,7 @@ Anagrammar.get_list(pid)
 <h3>Well, actually...</h3>
 <p>"1.2 seconds is slower than if you just did..."</p>
 
-<p>"Yes, you're very smart. Shut up."<br>
+<p>"Yes, you're very smart. Shut up."</p>
 - <small><i>Grandpa, <a href="https://www.imdb.com/title/tt0093779/">The Princess Bride</a></i></small>
 </aside>
 
