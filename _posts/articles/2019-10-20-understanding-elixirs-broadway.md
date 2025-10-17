@@ -3,10 +3,13 @@ title: Understanding Elixir's Broadway
 date: 2019-10-20T20:50:06-05:00
 draft: false
 description: "Broadway is Plataformatec's fourth attempt at streamlining the retrieval and processing of data in Elixir. This article gives you a glimpse into that journey, provides a deeper understanding of the library, giving you everything you need to build your own Broadway application."
+image: /assets/images/broadway_logo.png
 comments: false
 post: true
 categories: [elixir, broadway]
 ---
+
+_Updated: October 17, 2025_
 
 At its simplest, all of computing is moving data from one place to another.  Web
 forms take user-submitted data and move it into a database; video games start
@@ -144,9 +147,9 @@ releases.
 There are more moving parts in Broadway than what's been advertised, so we'll
 use an example project to highlight what those parts do. At its simplest, every
 Broadway application has two primary components: a producer and a consumer. The
-producer is a GenStage module which "produces" events to, while the consumer is
-a function which "processes" those events. For our first example, we'll
-implement those two pieces, but we'll need three modules to do it:
+producer is a GenStage module which "produces" events, while the consumer is a
+function which "processes" those events. For our first example, we'll implement
+those two pieces, but we'll need three modules to do it:
 
 - A `Counter` module used to provide a range of number to consumers.
 - A transformer module which transforms the data into Broadway messages.
@@ -248,11 +251,11 @@ defmodule MyApp do
         default: [
           module: {MyApp.Counter, 0},
           transformer: {MyApp.CounterMessage, :transform, []},
-          stages: 1
+          concurrency: 1
         ]
       ],
       processors: [
-        default: [stages: 2]
+        default: [concurrency: 2]
       ],
     )
   end
@@ -292,9 +295,9 @@ The next primary option is `:processors`. Like the "producers" option, only a
 single processor can be defined. Unlike the producers section, however, we
 merely assign options to the `:default` atom. Broadway matches the `:default`
 atom against the `handle_message/3` function below. As in the `:producers`
-options, we set stages to define the number of processes used to retrieve data
-from the producer. The default value is `System.schedulers_online() * 2` –
-that's 16 processes on my machine.
+options, we set concurrency to define the number of processes used to retrieve
+data from the producer. The default value is `System.schedulers_online() * 2`
+(that's 16 processes on my machine.)
 
 The last thing in our module is the `handle_message/3` function (i.e.  the
 processor).  "This is the place to do any kind of processing with the incoming
@@ -342,14 +345,15 @@ The output looks like this:
 ```
 
 Notice that the data seems to bounce around a bit. This is the result of setting
-the stages to 2 under the `:processors` option. The first processor (i.e.
+the concurrency to 2 under the `:processors` option. The first processor (i.e.
 consumer) takes the values 0-9, while the second takes 10-19.
 
 What do you think would happen if you changed the number of producers from 1 to
 2, or more? Answer: you would see the same numbers repeated twice by each
-processor.  While using multiple stages for producers may be useful when the
-source data is a queue, it may end up causing a lot of headaches if you try the
-same thing against a database unless you keep track of what was last returned.
+processor.  While using multiple concurrencies for producers may be useful when
+the source data is a queue, it may end up causing a lot of headaches if you try
+the same thing against a database unless you keep track of what was last
+returned.
 
 ### Acknowledgers
 
@@ -407,11 +411,11 @@ logic to re-queue failed messages, update metrics, or notify.
 
 # A Batching Example
 
-In our example we've been using two stages to process data. Even though each
-stage receives multiple messages to fulfill demand they each process those
-messages one at a time. For many situations, such as inserting records into a
-database or queuing messages to be sent en mass, it's more efficient to do so in
-batches.
+In our example we've been using a `concurrency` of 2 to process data. Even
+though each stage receives multiple messages to fulfill demand they each process
+those messages one at a time. For many situations, such as inserting records
+into a database or queuing messages to be sent en mass, it's more efficient to
+do so in batches.
 
 Adding batching to a Broadway application is like adding a processor: you first
 define your batchers in the `start_link/1` section, then create your
@@ -434,25 +438,25 @@ def start_link(_opts) do
       default: [
         module: {MyApp.Counter, 0},
         transformer: {MyApp.CounterMessage, :transform, []},
-        stages: 1
+        concurrency: 1
       ]
     ],
     processors: [
-      default: [stages: 2]
+      default: [concurrency: 2]
     ],
     batchers: [
-      default: [stages: 1, batch_size: 5],
-      fizzbuzz: [stages: 1, batch_size: 5],
-      fizz: [stages: 1, batch_size: 5],
-      buzz: [stages: 1, batch_size: 5],
+      default: [concurrency: 1, batch_size: 5],
+      fizzbuzz: [concurrency: 1, batch_size: 5],
+      fizz: [concurrency: 1, batch_size: 5],
+      buzz: [concurrency: 1, batch_size: 5],
     ]
   )
 end
 ```
 
 Here we've defined four batchers: "default", "fizzbuzz", "fizz", and "buzz".
-Each has one stage and has a batch size of five. Batch size means that the
-batcher triggers when the message count reaches that number.
+Each has a concurrency of 1 and has a batch size of five. Batch size means that
+the batcher triggers when the message count reaches that number.
 
 Let's modify our processor to set the batcher each message will use.
 
