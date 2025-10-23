@@ -2,7 +2,7 @@
 title: "Building Custom Producers with Elixir's Broadway"
 date: 2025-10-23T00:00-05:00
 draft: false
-description: "A practical guide to building custom Broadway producers in Elixir using GenStage. Understand how demand works, how to prevent your pipeline from stalling, and how to use Process.send_after/3 to keep data flowing between your producer and consumers."
+description: "A practical guide to building custom Broadway producers in Elixir using GenStage. Understand how demand works, how to prevent your pipeline from stalling, and how to use Process.send_after/3 to keep data flowing between your producer and Broadway consumer."
 image: /assets/images/custom_broadway_producers/broadway_flow.png
 comments: false
 post: true
