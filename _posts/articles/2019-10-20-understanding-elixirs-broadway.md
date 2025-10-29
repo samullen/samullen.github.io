@@ -2,7 +2,7 @@
 title: Understanding Elixir's Broadway
 date: 2019-10-20T20:50:06-05:00
 draft: false
-description: "Broadway is Plataformatec's fourth attempt at streamlining the retrieval and processing of data in Elixir. This article gives you a glimpse into that journey, provides a deeper understanding of the library, giving you everything you need to build your own Broadway application."
+description: "Broadway is Dashbit's fourth attempt at streamlining the retrieval and processing of data in Elixir. This article gives you a glimpse into that journey, provides a deeper understanding of the library, giving you everything you need to build your own Broadway application."
 image: /assets/images/broadway_logo.png
 comments: false
 post: true
@@ -34,8 +34,8 @@ identifiable and only then that you can start looking for a solution. While
 your first solution may be good enough to solve the problem, it may also serve
 to emphasize the depth of the problem and the inadequacy of your first attempt.
 It's through this cycle – problem discover, identification, and solution – that
-led [Plataformatec](http://plataformatec.com.br/) to develop the [Broadway
-library](https://github.com/plataformatec/broadway) for Elixir.
+led <strike>[Plataformatec](http://plataformatec.com.br/)</strike>
+[Dashbit](https://dashbit.co/) to develop the [Broadway library](https://github.com/dashbitco/broadway) for Elixir.
 
 ## The Road to Broadway
 
@@ -66,12 +66,12 @@ File.stream(path)
 
 He and his team quickly discovered the pain point here: it pushed data to
 processes whether they were ready for it or not. GenStage came out of this
-discovery, and [Flow](https://github.com/plataformatec/flow) soon followed when
+discovery, and [Flow](https://github.com/dashbitco/flow) soon followed when
 the team saw the need to focus on data. In the same way that Flow grew out of a
 focus on data, Broadway grew out of a focus "on events and on operational
 features, such as metrics, automatic acknowledgements, failure handling, and so
-on." <sup>[1]</sup> It took José and Plataformatec 6 or 7 years to get to
-Broadway – one iteration at a time.
+on." <sup>[1]</sup> It took José and DashBit 6 or 7 years to get to Broadway – one iteration
+at a time.
 
 ## Features
 
@@ -160,7 +160,7 @@ those two pieces, but we'll need three modules to do it:
 
 The producer is a GenStage module. Once created, you will assign it to the
 "producers" section of the Broadway module which allows Broadway to handle its
-supervision. By keeping this module seperate, it is "isolated from the rest of
+supervision. By keeping this module separate, it is "isolated from the rest of
 the pipeline and [can be] automatically resubscribed to in case of failures."<sup>[2]</sup>
 
 Here's our `Counter` producer:
@@ -552,7 +552,7 @@ the timeout to 15 seconds, we'll see results more in line with our expectations:
 The above example has been kept simple to help you see what each piece of the
 Broadway puzzle does, and enable you to get started with your own Broadway
 project. As your project increases in scope, I recommend looking at the source
-code of the [BroadwayRabbitMQ](https://github.com/plataformatec/broadway_rabbitmq) and [BroadwaySQS](https://github.com/plataformatec/broadway_sqs) projects.
+code of the [BroadwayRabbitMQ](https://github.com/dashbitco/broadway_rabbitmq) and [BroadwaySQS](https://github.com/dashbitco/broadway_sqs) projects.
 
 "At its simplest, all of computing is moving data from one place to another." If
 only it were that simple. Even when working with consistent and clean data there
@@ -569,6 +569,6 @@ partitioning, with still more to come. Seven years ago, José's idea was to chai
 `Stream.async()` functions together. It makes you wonder what Elixir's data
 processing will look like in another seven years.
 
-[1]: https://github.com/plataformatec/broadway "Broadway - GitHub"
+[1]: https://github.com/dashbitco/broadway "Broadway - GitHub"
 [2]: https://hexdocs.pm/broadway/Broadway.html "Broadway - Hex docs"
 [3]: https://hexdocs.pm/broadway/Broadway.Acknowledger.html "Broadway.Acknoledger - Hex docs"
