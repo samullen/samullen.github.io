@@ -34,8 +34,8 @@ identifiable and only then that you can start looking for a solution. While
 your first solution may be good enough to solve the problem, it may also serve
 to emphasize the depth of the problem and the inadequacy of your first attempt.
 It's through this cycle – problem discover, identification, and solution – that
-led <strike>[Plataformatec](http://plataformatec.com.br/)</strike>
-[Dashbit](https://dashbit.co/) to develop the [Broadway library](https://github.com/dashbitco/broadway) for Elixir.
+led <strike>Plataformatec</strike> [Dashbit](https://dashbit.co/) to develop the
+[Broadway library](https://github.com/dashbitco/broadway) for Elixir.
 
 ## The Road to Broadway
 
