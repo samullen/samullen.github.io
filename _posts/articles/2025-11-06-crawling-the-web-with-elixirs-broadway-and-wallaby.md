@@ -2,7 +2,7 @@
 title: Crawling the Web with Elixir's Broadway and Wallaby
 date: 2025-11-06T00:00-05:00
 draft: false
-description: ""
+description: "Discover how to combine Broadway’s powerful pipelines with Wallaby’s browser automation to create a scalable, concurrent Elixir web crawler."
 image: /assets/images/crawling_the_web/elixir_crawl.png
 comments: false
 post: true
