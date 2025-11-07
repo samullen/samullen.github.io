@@ -596,7 +596,7 @@ solution would be to use [poolboy](https://github.com/devinus/poolboy) to manage
 sessions.
 
 For brevity's sake, I didn't include poolboy's use in this article, but I have
-another article tackling it's use: [Elixir, Poolboy, and Little's
+another article tackling its use: [Elixir, Poolboy, and Little's
 Law](https://samuelmullen.com/articles/elixir-poolboy-and-littles-law).
 
 ### Build Crawlers with Protocols or Behaviours
