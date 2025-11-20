@@ -8,9 +8,9 @@ post: true
 categories: [elixir, programming]
 ---
 
-> **Uncle Owen:** I suppose you're programmed for etiquette and protocol.  
-> **C-3PO:** Protocol? It's my primary function, sir. I am well-versed in all the customs...  
-> **Uncle Owen:** I have no need for a protocol droid.  
+> **Uncle Owen:** I suppose you're programmed for etiquette and protocol.
+> **C-3PO:** Protocol? It's my primary function, sir. I am well-versed in all the customs...
+> **Uncle Owen:** I have no need for a protocol droid.
 >
 > – Star Wars
 
@@ -433,7 +433,7 @@ And here's how we might use it:
 iex> %Droid{} |> Emptiness.empty?
 true
 
-iex> droid = %Droid{designation: "R2-D2} |> Emptiness.empty?
+iex> droid = %Droid{designation: "R2-D2"} |> Emptiness.empty?
 false
 
 iex> %Sandcrawler{} |> Emptiness.empty?
