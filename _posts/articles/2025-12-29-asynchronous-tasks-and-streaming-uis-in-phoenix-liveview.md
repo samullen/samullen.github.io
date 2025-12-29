@@ -2,7 +2,7 @@
 title: Asynchronous Tasks and Streaming UIs in Phoenix Liveview
 date: 2025-12-29T00:00-05:00
 draft: false
-description: "A guide to the native asynchronous suite in Phoenix LiveView. Master assign_async/4, stream_async/4, and start_async/4 to handle LLM streaming and background tasks with ease."
+description: "A guide to the native asynchronous suite in Phoenix LiveView. Master assign_async/4, stream_async/4, and start_async/4/handle_async/3 to make working with streaming and background tasks easy."
 image: /assets/images/asynchronous_tasks_and_streaming_uis/async_streaming.png
 comments: false
 post: true
