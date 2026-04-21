@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-show_alert: false
+show_alert: true
 
 title: Samuel Mullen
 email: samuel@samuelmullen.com
